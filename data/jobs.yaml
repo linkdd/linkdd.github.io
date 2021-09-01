@@ -1,0 +1,189 @@
+- startDate: November 2011
+  endDate: June 2013
+  company: 9h37 SAS
+  title: Python Software Developer
+  context: Internship at the software development division
+  missions:
+    - Development of internal tooling for sales and IT teams
+    - Implementation of CPS (*Carte de professionnel Santé*) based authentication in Ubinect, with LemonLDAP::NG
+    - Development of statistical views in Ubinect
+  environment:
+    - Linux
+    - Python
+    - Django
+    - Apache2
+    - LemonLDAP::NG
+
+- startDate: July 2013
+  endDate: November 2016
+  company: Capensis
+  title: Python Software Developer / System Administrator / Trainer
+  context: "Development of an Open Source hypervisor: Canopsis"
+  missions:
+    - Development of data collectors for *Canopsis*
+    - Development of processing engines for *Canopsis*
+    - Development of widgets for the Web UI of *Canopsis*
+    - Implementation of installation procedure of *Canopsis* (shell based, then Ansible)
+    - Installation on end-user's infrastructure (RATP) and application management
+    - Documentation of the installation and exploitation procedure of *Canopsis* for RATP
+    - End-user training for *Canopsis* at RATP
+    - Quality Assurance procedure with end-users at RATP
+    - Development of a Graph Database for a universal CMDB
+    - Python training with *Pôle Emploi* during many **POE**
+    - Implementation of High Availability for *Canopsis*
+  environment:
+    - Linux
+    - Shell
+    - Python
+    - RabbitMQ
+    - Javascript
+    - EmberJS
+    - MongoDB
+    - Riak
+    - HAProxy
+    - Keepalived
+    - Ansible
+    - VMWare
+
+- startDate: "2013"
+  endDate: "2015"
+  company: SUPINFO
+  title: Freelance Teacher
+  context: First-year university courses
+  missions:
+    - C & Python training with classrooms of 30 students on average
+  environment:
+    - Python
+    - C
+    - Windows
+    - Linux
+
+- startDate: November 2016
+  endDate: February 2017
+  company: ELONET
+  title: Freelance PHP / Python Developer
+  context: Feature Development for the projects of the software editor ELONET
+  missions:
+    - Development of plugins for Dolibarr
+    - Development of a monitoring solution to observe access to mails attached files
+    - "Development of an alerting system for the decentralized supervision software: Decmon"
+  environment:
+    - Linux
+    - PHP
+    - Python
+    - Dolibarr
+    - ElasticSearch
+
+- startDate: "2017"
+  endDate: "2019"
+  company: ESTIAM
+  title: Freelance Teacher
+  context: 4th and 5th year university courses
+  missions:
+    - C Development for Arduino
+    - Advanced Javascript Development
+    - Web Development with Symfony
+    - Prestashop plugin development
+    - Linux System Administration
+    - Advanced Network Architecture
+    - Data Transformation and integration with Talend
+    - Data Visualization
+  environment:
+    - Linux
+    - C
+    - Arduino
+    - Javascript
+    - Symfony
+    - Prestashop
+    - Talend
+    - IPython (Jupyter)
+    - Tensorflow
+
+- startDate: March 2017
+  endDate: March 2018
+  company: Scille
+  title: Freelance Python Developer
+  context: Feature development for the projects of the software editor Scille with the *Ministère de l'intérieur* and the *Ministère de la défense*
+  missions:
+    - Implementation of replication between MongoDB and PostgreSQL for the Analytics team of the *SIAEF* project at the **DGEF**
+    - Improvements on the test suite of the *SIAEF* project
+    - Implementation of a PostgreSQL backend for the Open Source secure cloud software *Parsec*
+    - Implementation of folder synchronization for *Parsec*
+  environment:
+    - Linux
+    - Python
+    - Flask
+    - MongoDB
+    - PostgreSQL
+    - SolR
+    - pytest
+    - Hypothesis
+    - SuperSet
+
+- startDate: April 2018
+  endDate: June 2018
+  company: PROXIAD
+  title: Freelance Python Developer / System Administrator
+  context: Feature Development for Big Data projects at IT-CE
+  missions:
+    - Implementation of an automated deployment solution of Python/R environments on an Hadoop/Spark based infrastructure
+    - Tooling Documentation
+  environment:
+    - Windows
+    - Python
+    - Anaconda
+    - Ansible
+    - Hadoop
+    - Spark
+    - Git
+
+- startDate: July 2018
+  endDate: September 2020
+  company: PROXIAD
+  title: Freelance DevOps Engineer
+  context: DevOps engineer for the Retail teams at Decathlon
+  missions:
+    - Weekly delivry of internal applications in Pre-Production environments
+    - Automation of Integration and Deployment workflows
+    - Coaching of developers on Production Deployment workflows
+    - Development/Pre-Production/Production infrastructure management
+    - Micro Service infrastructure management (secret management, CI/CD, ...)
+  environment:
+    - Windows
+    - Linux
+    - Kubernetes
+    - Rancher
+    - Jenkins
+    - Rundeck
+    - ELK
+    - TICK
+    - Ansible
+    - ArgoCD
+    - Tekton
+    - Java/Groovy
+    - SpringBoot
+    - PostgreSQL
+
+- startDate: July 2017
+  endDate: On going
+  company: Link Society
+  title: CEO & Co-Founder
+  context: Software Editor
+  missions:
+    - "Development of a Patient Follow-Up software for Radiology departments: SPRadio"
+    - Development of a mobile application for the organization 3-6-9-12
+    - "Development of a Continuous Integration and Deployment platform: Datapio"
+    - "Development of a Dockerized Supervision engine: Kubirds"
+    - Teaching courses (with ESTIAM and/or SUPINFO)
+    - Marketing strategy & Business Development
+    - Development of a Kubernetes as a Service platform based on k0s
+  environment:
+    - Windows
+    - Linux
+    - Kubernetes
+    - Datapio
+    - Kubirds
+    - Ansible
+    - Tekton
+    - RabbitMQ
+    - k0s

@@ -1,0 +1,94 @@
+- category: Operating System
+  technologies:
+    - Windows
+    - Linux
+    - BSD
+- category: Programming Languages
+  technologies:
+    - C
+    - C++
+    - Python (2.7+, 3.4+)
+    - Go
+    - Rust
+    - Javascript (ES5, ES6)
+    - Erlang
+    - Elixir
+    - PHP (5, 7)
+    - Shell Scripting
+    - Perl
+    - Lua
+    - Java
+    - Assembly x86
+- category: Frontend Libraries
+  technologies:
+    - VueJS
+    - React
+    - EmberJS
+    - jQuery
+    - ExtJS
+- category: Backend Libraries
+  technologies:
+    - Django
+    - Flask
+    - ExpressJS
+    - Socket.IO
+    - Phoenix
+- category: System Administration
+  technologies:
+    - Ansible
+    - Kubernetes
+    - Rancher
+    - Docker
+- category: Continuous Integration & Deployment
+  technologies:
+    - Jenkins
+    - Rundeck
+    - ArgoCD
+    - Tekton
+    - Datapio
+- category: Supervision
+  technologies:
+    - Nagios
+    - Shinken
+    - Centreon
+    - Icinga
+    - Zabbix
+    - Prometheus
+    - Kubirds
+- category: Databases
+  technologies:
+    - PostgreSQL
+    - MySQL
+    - MariaDB
+    - MongoDB
+    - Riak
+- category: Big Data & Machine Learning
+  technologies:
+    - ElasticSearch
+    - SolR
+    - Tensorflow
+    - scikit-learn
+    - IPython (Jupyter)
+    - Talend
+- category: Web Servers
+  technologies:
+    - Apache2
+    - Nginx
+    - lighttpd
+- category: High Availability
+  technologies:
+    - HAProxy
+    - Traefik
+    - Keepalived
+    - MetalLB
+- category: Virtualization
+  technologies:
+    - VirtualBox
+    - libvirt
+    - Xen
+    - VMWare
+- category: Other
+  technologies:
+    - OpenLDAP
+    - RabbitMQ
+    - Kafka

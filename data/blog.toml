@@ -1,0 +1,11 @@
+[[feeds]]
+
+rss = "https://linuxfr.org/users/linkdd.atom"
+url = "https://linuxfr.org/users/linkdd"
+name = "LinuxFR"
+
+[[feeds]]
+
+rss = "https://medium.com/feed/@david-delassus"
+url = "https://david-delassus.medium.com/"
+name = "Medium"

@@ -1,0 +1,6 @@
+[[buttons]]
+
+url = "https://liberapay.com/linkdd/donate"
+label = """
+<img alt="Donate using Liberapay" src="https://liberapay.com/assets/widgets/donate.svg" />
+"""

@@ -1,0 +1,17 @@
+[[navbar]]
+
+url = "https://github.com/linkdd"
+icon = "fab fa-github"
+label = "Github"
+
+[[navbar]]
+
+url = "https://twitter.com/linkdd"
+icon = "fab fa-twitter"
+label = "Twitter"
+
+[[navbar]]
+
+url = "https://linkedin.com/in/linkdd"
+icon = "fab fa-linkedin"
+label = "LinkedIn"
