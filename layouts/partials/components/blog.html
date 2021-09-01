@@ -1,0 +1,27 @@
+<section class="container px-3 is-hidden-print">
+  <div class="content">
+    <h2 class="title is-size-2">
+      &#128240;
+      Articles
+    </h2>
+
+    <div
+      id="blog"
+      class="columns"
+      data-config="{{ .Site.Data.blog | jsonify }}"
+    ></div>
+
+    <p class="has-text-right has-text-grey">
+      <span class="is-uppercase is-size-7">Read more on:</span>
+      {{ range .Site.Data.blog.feeds }}
+        <a class="tag is-link" href="{{ .url }}">
+          <span class="icon">
+            <span class="fas fa-link"></span>
+          </span>
+          <span>{{ .name }}</span>
+        </a>
+      {{ end }}
+    </p>
+  </div>
+  <hr/>
+</section>

@@ -1,0 +1,46 @@
+<section class="container px-3 mb-6">
+  <div class="content">
+    <h2 class="title is-size-2">
+      &#128197;
+      Experience
+    </h2>
+
+    <div class="timeline">
+      {{ range .Site.Data.jobs }}
+        <div class="timeline-item">
+          <div class="timeline-marker is-link is-icon">
+            <span class="icon">
+              <span class="far fa-calendar-check"></span>
+            </span>
+          </div>
+          <div class="timeline-content pl-1" style="width: 100%;">
+            <article class="container mt-3 pl-4" style="border-top: 2px solid royalblue;">
+              <table class="table is-fullwidth">
+                <tr>
+                  <td>{{ .startDate }}</td>
+                  <td>{{ .company }}</td>
+                </tr>
+                <tr>
+                  <td>{{ .endDate }}</td>
+                  <td>{{ .title }}</td>
+                </tr>
+              </table>
+              <p class="has-text-info has-text-weight-bold is-italic">
+                Context: {{ .context | markdownify }}
+              </p>
+              <p><b>Missions:</b></p>
+              <ul>
+                {{ range .missions }}
+                  <li>{{ . | markdownify }}</li>
+                {{ end }}
+              </ul>
+              <p class="has-text-link-dark has-text-weight-bold is-italic">
+                Environment: {{ delimit .environment ", " }}
+              </p>
+            </article>
+          </div>
+        </div>
+      {{ end }}
+    </div>
+  </div>
+</section>

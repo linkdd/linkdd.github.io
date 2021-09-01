@@ -1,0 +1,35 @@
+<nav class="navbar is-fixed-top is-link is-hidden-print" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a class="navbar-item" href="/">
+      <b>{{ .Site.Data.profile.nickname }}</b>
+    </a>
+
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="linkdd-menu">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+
+  <div id="linkdd-menu" class="navbar-menu">
+    <div class="navbar-start">
+      <a class="navbar-item has-tooltip-right" href="#" onclick="window.print()" data-tooltip="Print resume">
+        <span class="icon">
+          <span class="fas fa-print"></span>
+        </span>
+      </a>
+      {{ range .Site.Data.donation.buttons }}
+        <a class="navbar-item" href="{{ .url }}">
+          {{ .label | safeHTML }}
+        </a>
+      {{ end }}
+    </div>
+    <div class="navbar-end">
+      {{ range .Site.Data.menu.navbar }}
+        <a class="navbar-item has-tooltip-left" href="{{ .url }}" data-tooltip="{{ .label }}">
+          <span class="{{ .icon }}"></span>
+        </a>
+      {{ end }}
+    </div>
+  </div>
+</nav>

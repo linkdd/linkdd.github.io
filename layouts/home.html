@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    {{ partial "core/metadata.html" . }}
+    {{ partial "core/css.html" . }}
+    {{ partial "core/scripts.html" . }}
+  </head>
+
+  <body class="has-navbar-fixed-top">
+    {{ partial "components/navbar.html" . }}
+
+    {{ partial "components/header.html" . }}
+    {{ partial "components/bio.html" . }}
+    {{ partial "components/blog.html" . }}
+    {{ partial "components/skills.html" . }}
+    {{ partial "components/languages.html" . }}
+    {{ partial "components/timeline.html" . }}
+    {{ partial "components/footer.html" . }}
+  </body>
+</html>

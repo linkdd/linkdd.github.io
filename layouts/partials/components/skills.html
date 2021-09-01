@@ -1,0 +1,21 @@
+<section class="container px-3">
+  <div class="content">
+    <h2 class="title is-size-2">
+      &#129337;
+      Skills
+    </h2>
+
+    <table class="table is-fullwidth is-hoverable">
+      <tbody>
+        {{ range $skill := .Site.Data.skills }}
+          <tr>
+            <td><b>{{ $skill.category }}</b></td>
+            <td>{{ delimit $skill.technologies ", " }}</td>
+          </tr>
+        {{ end }}
+      </tbody>
+    </table>
+  </div>
+
+  <hr/>
+</section>

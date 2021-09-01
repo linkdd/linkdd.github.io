@@ -1,0 +1,85 @@
+<header class="container px-3 mt-6">
+  <div class="columns">
+    <!-- Picture -->
+    <div class="column">
+      <div class="columns">
+        <figure class="column is-narrow">
+          <p class="image is-128x128">
+            <img src="{{ .Site.Data.profile.picture }}" />
+          </p>
+        </figure>
+        <div class="column">
+          <p><b>{{ .Site.Data.profile.fullname }}</b></p>
+          <p class="has-text-grey">
+            {{ .Site.Params.Description | markdownify }}
+          </p>
+          <p>
+            <a href="mailto:{{ .Site.Data.profile.email }}">
+              {{ .Site.Data.profile.email }}
+            </a>
+          </p>
+          <p>{{ .Site.Data.profile.birthday }}</p>
+        </div>
+      </div>
+    </div>
+    <!-- Availability -->
+    <div class="column is-narrow">
+      <div class="field has-addons">
+        <p class="control">
+          {{ if .Site.Data.availability.remote }}
+            <button class="button is-success has-tooltip-top" data-tooltip="Available">
+              <span class="icon">
+                <span class="fas fa-laptop-house"></span>
+              </span>
+              <span>Remote</span>
+            </button>
+          {{ else }}
+            <button class="button is-danger has-tooltip-top" data-tooltip="Not available">
+              <span class="icon">
+                <span class="fas fa-laptop-house"></span>
+              </span>
+              <span>Remote</span>
+            </button>
+          {{ end}}
+        </p>
+        <p class="control">
+          {{ if .Site.Data.availability.onsite }}
+            <button class="button is-success has-tooltip-top" data-tooltip="Available">
+              <span class="icon">
+                <span class="fas fa-building"></span>
+              </span>
+              <span>On Site</span>
+            </button>
+          {{ else }}
+            <button class="button is-danger has-tooltip-top" data-tooltip="Not available">
+              <span class="icon">
+                <span class="fas fa-building"></span>
+              </span>
+              <span>On Site</span>
+            </button>
+          {{ end}}
+        </p>
+      </div>
+
+      <p class="is-size-5">
+        <span class="icon">
+          <span class="fas fa-map-marker-alt"></span>
+        </span>
+        <span>{{ .Site.Data.availability.location }}</span>
+      </p>
+
+      <p class="is-size-5">
+        <span class="icon">
+          <span class="far fa-calendar-alt"></span>
+        </span>
+        <span>{{ .Site.Data.availability.time }}</span>
+      </p>
+    </div>
+  </div>
+
+  <h1 class="title is-size-1 has-text-centered">
+    {{ .Site.Data.profile.title }}
+  </h1>
+
+  <hr/>
+</header>
