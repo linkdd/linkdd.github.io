@@ -1,0 +1,21 @@
+@media print {
+  .is-hidden-print {
+    display: none;
+  }
+
+  section.container,
+  header.container,
+  .timeline-item {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .timeline-marker {
+    display: none !important;
+  }
+
+  button.button {
+    -webkit-print-color-adjust: exact;
+    color-adjust: exact;
+  }
+}
