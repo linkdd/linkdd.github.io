@@ -1,0 +1,11 @@
+baseURL = "https://linkdd.github.io/"
+lnaguageCode = "en"
+title = "David Delassus"
+
+[params]
+
+description = "CEO & Co-Founder at [Link Society](https://link-society.com)"
+footer = """
+Website content is released under the term of the
+[CC BY NC SA 4.0](http://creativecommons.org/licenses/by-nc-sa/4.0/) license.
+"""
