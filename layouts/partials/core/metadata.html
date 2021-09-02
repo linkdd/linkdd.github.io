@@ -1,11 +1,16 @@
 <title>{{ .Site.Title }}</title>
+<meta name="title" content="{{ .Site.Title }}" />
+<meta name="og:title" content="{{ .Site.Title }}" />
+<meta name="twitter:title" content="{{ .Site.Title }}" />
+
+<meta name="author" content="{{ .Site.Data.profile.fullname }}" />
+<meta name="description" content="{{ .Site.Data.profile.title }} - {{ .Site.Params.Description }}" />
+<meta name="og:description" content="{{ .Site.Data.profile.title }} - {{ .Site.Params.Description }}" />
+
+<link rel="shortcut icon" type="image/png" href="/img/favicon.png" />
+<meta property="og:image"  content="/img/favicon.png" />
+<meta name="twitter:image" content="/img/favicon.png" />
 
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-<meta name="author" content="{{ .Site.Data.profile.fullname }}" />
-<meta name="title" content="{{ .Site.Title }}" />
-<meta name="description" content="{{ .Site.Data.profile.title }} - {{ .Site.Params.Description }}" />
-<meta name="og:title" content="{{ .Site.Title }}" />
-<meta name="og:description" content="{{ .Site.Data.profile.title }} - {{ .Site.Params.Description }}" />
-<meta name="twitter:title" content="{{ .Site.Title }}" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
