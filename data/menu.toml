@@ -15,3 +15,9 @@ label = "Twitter"
 url = "https://linkedin.com/in/linkdd"
 icon = "fab fa-linkedin"
 label = "LinkedIn"
+
+[[navbar]]
+
+url = "https://david-delassus.medium.com"
+icon = "fab fa-medium"
+label = "Medium"
