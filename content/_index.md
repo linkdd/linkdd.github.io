@@ -12,4 +12,5 @@ I am currently working on:
 
  - [Kubirds](https://kubirds.com): A Cloud-Native supervision engine
  - [Datapio](https://datapio.co): A complete CI/CD platform
- - *Letlang*: functional programming language
+ - [Letlang](https://letlang.dev): functional programming language
+ - [tricorder](https://linkdd.github.io/tricorder/): Automation the KISS way, no YAML involved
