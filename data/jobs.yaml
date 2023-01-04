@@ -164,6 +164,24 @@
     - SpringBoot
     - PostgreSQL
 
+- startDate: December 2021
+  endDate: On going
+  company: Goveni
+  title: Freelance Backend engineer
+  context: Financica accounting application
+  missions:
+    - "Python Backend development"
+    - "AWS infrastrucure management with Terraform"
+  environment:
+    - AWS (EC2, RDS, VPC, S3)
+    - Terraform
+    - Docker
+    - Django
+    - PostgreSQL
+    - Python
+    - TypeScript
+    - React
+
 - startDate: July 2017
   endDate: On going
   company: Link Society
@@ -187,3 +205,7 @@
     - Tekton
     - RabbitMQ
     - k0s
+    - Go
+    - Elixir
+    - Python
+    - Rust
