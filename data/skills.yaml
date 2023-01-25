@@ -45,6 +45,7 @@
     - Rundeck
     - ArgoCD
     - Tekton
+    - Github Actions
     - Datapio
 - category: Supervision
   technologies:
