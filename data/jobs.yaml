@@ -165,7 +165,7 @@
     - PostgreSQL
 
 - startDate: December 2021
-  endDate: On going
+  endDate: March 2023
   company: Goveni
   title: Freelance Backend engineer
   context: Financica accounting application
@@ -181,6 +181,23 @@
     - Python
     - TypeScript
     - React
+
+- startDate: April 2023
+  endDate: On going
+  company: European Commission
+  title: Freelance DevSecOps engineer
+  context: System administrator
+  missions:
+    - "Development and maintainance of the infrastructure"
+    - "Automating deployment workflows"
+  environment:
+    - AWS (EC2, VPC, ...)
+    - Gitlab
+    - Docker
+    - NginX
+    - Ansible
+    - AWX
+    - Netbox
 
 - startDate: July 2017
   endDate: On going
