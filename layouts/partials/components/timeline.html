@@ -1,3 +1,10 @@
+{{- $jobs := .Site.Data.jobs -}}
+{{- $nb_jobs := len $jobs -}}
+{{- $jobs_reversed := slice -}}
+{{- range seq $nb_jobs -}}
+  {{- $jobs_reversed = $jobs_reversed | append (index $jobs (sub $nb_jobs .)) }}
+{{- end -}}
+
 <section class="container px-3 mb-6">
   <div class="content">
     <h2 class="title is-size-2">
@@ -6,7 +13,7 @@
     </h2>
 
     <div class="timeline">
-      {{ range .Site.Data.jobs }}
+      {{ range $jobs_reversed }}
         <div class="timeline-item">
           <div class="timeline-marker is-link is-icon">
             <span class="icon">
