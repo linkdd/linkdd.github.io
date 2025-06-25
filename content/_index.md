@@ -10,6 +10,7 @@ and people's potential for the best.
 
 I am currently working on:
 
+ - [FlowG](https://link-society.github.io/flowg/): A low-code log processing solution
  - [Kubirds](https://kubirds.com): A Cloud-Native supervision engine
  - [Datapio](https://datapio.co): A complete CI/CD platform
  - [Letlang](https://letlang.dev): functional programming language
