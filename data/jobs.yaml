@@ -212,6 +212,9 @@
     - Teaching courses (with ESTIAM and/or SUPINFO)
     - Marketing strategy & Business Development
     - Development of a Kubernetes as a Service platform based on k0s
+    - "Development of an OpenSource Log Processing software: FlowG"
+    - Development of a SaaS offering for FlowG based on Netbox and the Netbox Docker Plugin
+    - "Development of an LLM-based document indexing software: LLamapedia"
   environment:
     - Windows
     - Linux
@@ -226,3 +229,6 @@
     - Elixir
     - Python
     - Rust
+    - Netbox
+    - LLMs
+    - MCP

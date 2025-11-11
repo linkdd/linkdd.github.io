@@ -63,6 +63,9 @@
     - MariaDB
     - MongoDB
     - Riak
+- category: IPAM & DCIM
+  technologies:
+    - NetBox
 - category: Big Data & Machine Learning
   technologies:
     - ElasticSearch
