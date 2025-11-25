@@ -188,16 +188,33 @@
   title: Freelance DevSecOps engineer
   context: System administrator
   missions:
-    - "Development and maintainance of the infrastructure"
-    - "Automating deployment workflows"
+    - "Development of features on Netbox plugins for Reverse Proxies and Docker orchestration"
+    - "Development of a Netbox Webhook handler to automate live configuration updates on Reverse Proxies"
+    - "Development of Ansible roles and playbooks to orchestrate Docker-based services via Netbox and AWX"
+    - "Development of Gitlab CI/CD pipelines to build, test and release Python projects, Docker images, and Ansible collections"
+    - "Design of Reverse Proxy and Web Application Firewall configuration to match business requirements and security best practices"
+    - "Design of Reverse Proxy architecture (with WAF, custom middlewares, automated TLS certificate management, rate limiting, caching, ...) based on Netbox"
+    - "Implementation of Prometheus Exporter and Healthcheck endpoints to match monitoring requirements"
+    - "Writing Technical Documentation for code and architecture"
+    - "Writing User Guides and Troubleshooting guides for knowledge transfer within the team"
+    - "Writing Standard Operating Procedures for system administration tasks and incident response"
   environment:
+    - Python
     - AWS (EC2, VPC, ...)
     - Gitlab
     - Docker
     - NginX
+    - Apache2
+    - Traefik
+    - ModSecurity Web Application Firewall
     - Ansible
     - AWX
     - Netbox
+    - Prometheus
+    - Grafana
+    - AlertManager
+    - SNMP
+    - Blackbox
 
 - startDate: July 2017
   endDate: On going
