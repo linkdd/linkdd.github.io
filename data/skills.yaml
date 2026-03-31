@@ -46,8 +46,16 @@
     - ArgoCD
     - Tekton
     - Github Actions
-    - Datapio
-- category: Supervision
+    - Gitlab CI
+    - Terraform
+- category: Cloud Platforms
+  technologies:
+    - GCP
+    - AWS
+    - Azure
+    - DigitalOcean
+    - OVH
+- category: Supervision & Monitoring
   technologies:
     - Nagios
     - Shinken
@@ -55,7 +63,9 @@
     - Icinga
     - Zabbix
     - Prometheus
-    - Kubirds
+    - FlowG
+    - Splunk
+    - Datadog
 - category: Databases
   technologies:
     - PostgreSQL
@@ -77,8 +87,8 @@
 - category: Web Servers
   technologies:
     - Apache2
-    - Nginx
-    - lighttpd
+    - Nginx (& Nginx Plus)
+    - Caddy
 - category: High Availability
   technologies:
     - HAProxy
