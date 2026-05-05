@@ -4,15 +4,22 @@
   title: Python Software Developer
   context: Internship at the software development division
   missions:
-    - Development of internal tooling for sales and IT teams
-    - Implementation of CPS (*Carte de professionnel Santé*) based authentication in Ubinect, with LemonLDAP::NG
-    - Development of statistical views in Ubinect
-  environment:
-    - Linux
-    - Python
-    - Django
-    - Apache2
-    - LemonLDAP::NG
+    - description: Development of internal tooling for sales and IT teams
+      tags: [python, django, backend-dev]
+      environment:
+        - Python
+        - Django
+    - description: Implementation of CPS (*Carte de professionnel Santé*) based authentication in Ubinect
+      tags: [linux, apache2, lemonldap, sysops, backend-dev]
+      environment:
+        - Linux
+        - Apache2
+        - LemonLDAP::NG
+    - description: Development of statistical views in Ubinect
+      tags: [python, django, webdev, backend-dev]
+      environment:
+        - Python
+        - Django
 
 - startDate: July 2013
   endDate: November 2016
@@ -20,30 +27,60 @@
   title: Python Software Developer / System Administrator / Trainer
   context: "Development of an Open Source hypervisor: Canopsis"
   missions:
-    - Development of data collectors for *Canopsis*
-    - Development of processing engines for *Canopsis*
-    - Development of widgets for the Web UI of *Canopsis*
-    - Implementation of installation procedure of *Canopsis* (shell based, then Ansible)
-    - Installation on end-user's infrastructure (RATP) and application management
-    - Documentation of the installation and exploitation procedure of *Canopsis* for RATP
-    - End-user training for *Canopsis* at RATP
-    - Quality Assurance procedure with end-users at RATP
-    - Development of a Graph Database for a universal CMDB
-    - Python training with *Pôle Emploi* during many **POE**
-    - Implementation of High Availability for *Canopsis*
-  environment:
-    - Linux
-    - Shell
-    - Python
-    - RabbitMQ
-    - Javascript
-    - EmberJS
-    - MongoDB
-    - Riak
-    - HAProxy
-    - Keepalived
-    - Ansible
-    - VMWare
+    - description: Development of data collectors for *Canopsis*
+      tags: [python, system, backend-dev]
+      environment:
+        - Python
+    - description: Development of processing engines for *Canopsis*
+      tags: [python, system, backend-dev]
+      environment:
+        - Python
+        - RabbitMQ
+        - MongoDB
+    - description: Development of widgets for the Web UI of *Canopsis*
+      tags: [javascript, emberjs, webdev, frontend-dev]
+      environment:
+        - Javascript
+        - EmberJS
+    - description: Implementation of installation procedure of *Canopsis* (shell based, then Ansible)
+      tags: [linux, shell, ansible, sysops, automation]
+      environment:
+        - Linux
+        - Shell
+        - Ansible
+    - description: Installation on end-user's infrastructure (RATP) and application management
+      tags: [linux, shell, ansible, vmware, sysops]
+      environment:
+        - Linux
+        - Shell
+        - Ansible
+        - VMWare
+    - description: Documentation of the installation and exploitation procedure of *Canopsis* for RATP
+      tags: [documentation]
+      environment: []
+    - description: End-user training for *Canopsis* at RATP
+      tags: [training]
+      environment: []
+    - description: Quality Assurance procedure with end-users at RATP
+      tags: [qa]
+      environment: []
+    - description: Development of a Graph Database for a universal CMDB
+      tags: [python, backend, database, backend-dev]
+      environment:
+        - Python
+        - Riak
+    - description: Python training with *Pôle Emploi* during many **POE**
+      tags: [linux, shell, python, training]
+      environment:
+        - Linux
+        - Shell
+        - Python
+    - description: Implementation of High Availability for *Canopsis*
+      tags: [linux, haproxy, keepalived, sysops, ha, backend-dev]
+      environment:
+        - Linux
+        - HAProxy
+        - Keepalived
 
 - startDate: "2013"
   endDate: "2015"
@@ -51,12 +88,13 @@
   title: Freelance Teacher
   context: First-year university courses
   missions:
-    - C & Python training with classrooms of 30 students on average
-  environment:
-    - Python
-    - C
-    - Windows
-    - Linux
+    - description: C & Python training with classrooms of 30 students on average
+      tags: [c, python, training]
+      environment:
+        - Python
+        - C
+        - Windows
+        - Linux
 
 - startDate: November 2016
   endDate: February 2017
@@ -64,15 +102,22 @@
   title: Freelance PHP / Python Developer
   context: Feature Development for the projects of the software editor ELONET
   missions:
-    - Development of plugins for Dolibarr
-    - Development of a monitoring solution to observe access to mails attached files
-    - "Development of an alerting system for the decentralized supervision software: Decmon"
-  environment:
-    - Linux
-    - PHP
-    - Python
-    - Dolibarr
-    - ElasticSearch
+    - description: Development of plugins for Dolibarr
+      tags: [php, dolibarr, webdev, frontend-dev]
+      environment:
+        - Linux
+        - PHP
+        - Dolibarr
+    - description: Development of a monitoring solution to observe access to mails attached files
+      tags: [php, monitoring, backend-dev]
+      environment:
+        - PHP
+    - description: "Development of an alerting system for the decentralized supervision software: Decmon"
+      tags: [python, monitoring, backend-dev]
+      environment:
+        - Linux
+        - Python
+        - ElasticSearch
 
 - startDate: "2017"
   endDate: "2019"
@@ -80,24 +125,43 @@
   title: Freelance Teacher
   context: 4th and 5th year university courses
   missions:
-    - C Development for Arduino
-    - Advanced Javascript Development
-    - Web Development with Symfony
-    - Prestashop plugin development
-    - Linux System Administration
-    - Advanced Network Architecture
-    - Data Transformation and integration with Talend
-    - Data Visualization
-  environment:
-    - Linux
-    - C
-    - Arduino
-    - Javascript
-    - Symfony
-    - Prestashop
-    - Talend
-    - IPython (Jupyter)
-    - Tensorflow
+    - description: C Development for Arduino
+      tags: [c, arduino, training]
+      environment:
+        - C
+        - Arduino
+    - description: Advanced Javascript Development
+      tags: [javascript, webdev, training]
+      environment:
+        - Javascript
+    - description: Web Development with Symfony
+      tags: [php, symfony, webdev, training]
+      environment:
+        - PHP
+        - Symfony
+    - description: Prestashop plugin development
+      tags: [php, prestashop, webdev, training]
+      environment:
+        - PHP
+        - Prestashop
+    - description: Linux System Administration
+      tags: [linux, sysops, training]
+      environment:
+        - Linux
+    - description: Advanced Network Architecture
+      tags: [linux, network, training]
+      environment:
+        - Linux
+        - Cisco IOS
+    - description: Data Transformation and integration with Talend
+      tags: [talend, bigdata, dataviz, training]
+      environment:
+        - Talend
+    - description: Data Visualization
+      tags: [python, tensorflow, dataviz, training]
+      environment:
+        - IPython (Jupyter)
+        - Tensorflow
 
 - startDate: March 2017
   endDate: March 2018
@@ -105,20 +169,33 @@
   title: Freelance Python Developer
   context: Feature development for the projects of the software editor Scille with the *Ministère de l'intérieur* and the *Ministère de la défense*
   missions:
-    - Implementation of replication between MongoDB and PostgreSQL for the Analytics team of the *SIAEF* project at the **DGEF**
-    - Improvements on the test suite of the *SIAEF* project
-    - Implementation of a PostgreSQL backend for the Open Source secure cloud software *Parsec*
-    - Implementation of folder synchronization for *Parsec*
-  environment:
-    - Linux
-    - Python
-    - Flask
-    - MongoDB
-    - PostgreSQL
-    - SolR
-    - pytest
-    - Hypothesis
-    - SuperSet
+    - description: Implementation of replication between MongoDB and PostgreSQL for the Analytics team of the *SIAEF* project at the **DGEF**
+      tags: [python, mongodb, postgresql, backend-dev]
+      environment:
+        - Linux
+        - Python
+        - MongoDB
+        - PostgreSQL
+        - SolR
+        - SuperSet
+    - description: Improvements on the test suite of the *SIAEF* project
+      tags: [python, testing, backend-dev]
+      environment:
+        - Python
+        - pytest
+        - Hypothesis
+    - description: Implementation of a PostgreSQL backend for the Open Source secure cloud software *Parsec*
+      tags: [python, postgresql, backend-dev]
+      environment:
+        - Python
+        - PostgreSQL
+        - Flask
+    - description: Implementation of folder synchronization for *Parsec*
+      tags: [python, postgresql, backend-dev]
+      environment:
+        - Python
+        - PostgreSQL
+        - Flask
 
 - startDate: April 2018
   endDate: June 2018
@@ -126,16 +203,19 @@
   title: Freelance Python Developer / System Administrator
   context: Feature Development for Big Data projects at IT-CE
   missions:
-    - Implementation of an automated deployment solution of Python/R environments on an Hadoop/Spark based infrastructure
-    - Tooling Documentation
-  environment:
-    - Windows
-    - Python
-    - Anaconda
-    - Ansible
-    - Hadoop
-    - Spark
-    - Git
+    - description: Implementation of an automated deployment solution of Python/R environments on an Hadoop/Spark based infrastructure
+      tags: [automation, bigdata, backend-dev]
+      environment:
+        - Windows
+        - Python
+        - Anaconda
+        - Ansible
+        - Hadoop
+        - Spark
+        - Git
+    - description: Tooling Documentation
+      tags: [documentation, backend-dev]
+      environment: []
 
 - startDate: July 2018
   endDate: September 2020
@@ -143,26 +223,47 @@
   title: Freelance DevOps Engineer
   context: DevOps engineer for the Retail teams at Decathlon
   missions:
-    - Weekly delivry of internal applications in Pre-Production environments
-    - Automation of Integration and Deployment workflows
-    - Coaching of developers on Production Deployment workflows
-    - Development/Pre-Production/Production infrastructure management
-    - Micro Service infrastructure management (secret management, CI/CD, ...)
-  environment:
-    - Windows
-    - Linux
-    - Kubernetes
-    - Rancher
-    - Jenkins
-    - Rundeck
-    - ELK
-    - TICK
-    - Ansible
-    - ArgoCD
-    - Tekton
-    - Java/Groovy
-    - SpringBoot
-    - PostgreSQL
+    - description: Weekly delivery of internal applications in Pre-Production environments
+      tags: [linux, kubernetes, cicd, devops]
+      environment:
+        - Linux
+        - Kubernetes
+        - Rancher
+        - Jenkins
+    - description: Automation of Integration and Deployment workflows
+      tags: [linux, kubernetes, cicd, devops]
+      environment:
+        - Linux
+        - Kubernetes
+        - Jenkins
+        - Java/Groovy
+        - Rundeck
+        - ArgoCD
+        - TektonCD
+    - description: Coaching of developers on Production Deployment workflows
+      tags: [devops, cicd, training]
+      environment:
+        - Windows
+        - Linux
+        - Java/Groovy
+        - SpringBoot
+    - description: Development/Pre-Production/Production infrastructure management
+      tags: [kubernetes, elk, tick, springboot, postgresql, devops]
+      environment:
+        - Kubernetes
+        - ELK
+        - TICK
+        - SpringBoot
+        - PostgreSQL
+    - description: Micro Service infrastructure management (secret management, CI/CD, ...)
+      tags: [linux, kubernetes, jenkins, ansible, devops]
+      environment:
+        - Linux
+        - Kubernetes
+        - Jenkins
+        - Ansible
+        - ELK
+        - TICK
 
 - startDate: December 2021
   endDate: March 2023
@@ -170,17 +271,23 @@
   title: Freelance Backend engineer
   context: Financica accounting application
   missions:
-    - "Python Backend development"
-    - "AWS infrastrucure management with Terraform"
-  environment:
-    - AWS (EC2, RDS, VPC, S3)
-    - Terraform
-    - Docker
-    - Django
-    - PostgreSQL
-    - Python
-    - TypeScript
-    - React
+    - description: Python Backend development
+      tags: [python, django, postgresql, backend-dev]
+      environment:
+        - Python
+        - Django
+        - PostgreSQL
+    - description: Frontend development
+      tags: [typescript, react, webdev, frontend-dev]
+      environment:
+        - TypeScript
+        - React
+    - description: AWS infrastructure management with Terraform
+      tags: [aws, terraform, devops, cloud]
+      environment:
+        - AWS (EC2, RDS, VPC, S3)
+        - Terraform
+        - Docker
 
 - startDate: April 2023
   endDate: On going
@@ -188,33 +295,81 @@
   title: Freelance DevSecOps engineer
   context: System administrator
   missions:
-    - "Development of features on Netbox plugins for Reverse Proxies and Docker orchestration"
-    - "Development of a Netbox Webhook handler to automate live configuration updates on Reverse Proxies"
-    - "Development of Ansible roles and playbooks to orchestrate Docker-based services via Netbox and AWX"
-    - "Development of Gitlab CI/CD pipelines to build, test and release Python projects, Docker images, and Ansible collections"
-    - "Design of Reverse Proxy and Web Application Firewall configuration to match business requirements and security best practices"
-    - "Design of Reverse Proxy architecture (with WAF, custom middlewares, automated TLS certificate management, rate limiting, caching, ...) based on Netbox"
-    - "Implementation of Prometheus Exporter and Healthcheck endpoints to match monitoring requirements"
-    - "Writing Technical Documentation for code and architecture"
-    - "Writing User Guides and Troubleshooting guides for knowledge transfer within the team"
-    - "Writing Standard Operating Procedures for system administration tasks and incident response"
-  environment:
-    - Python
-    - AWS (EC2, VPC, ...)
-    - Gitlab
-    - Docker
-    - NginX
-    - Apache2
-    - Traefik
-    - ModSecurity Web Application Firewall
-    - Ansible
-    - AWX
-    - Netbox
-    - Prometheus
-    - Grafana
-    - AlertManager
-    - SNMP
-    - Blackbox
+    - description: Development of features on Netbox plugins for Reverse Proxies and Docker orchestration
+      tags: [python, netbox, backend-dev, automation]
+      environment:
+        - Python
+        - Netbox
+    - description: Development of a Netbox Webhook handler to automate live configuration updates on Reverse Proxies
+      tags: [python, netbox, backend-dev, automation]
+      environment:
+        - Python
+        - Netbox
+        - Traefik
+        - Apache2
+        - ModSecurity Web Application Firewall
+        - NGINX
+    - description: Development of Ansible roles and playbooks to orchestrate Docker-based services via Netbox and AWX
+      tags: [ansible, docker, netbox, automation]
+      environment:
+        - Python
+        - Ansible
+        - AWX
+        - Netbox
+        - Docker
+    - description: Development of Gitlab CI/CD pipelines to build, test and release Python projects, Docker images, and Ansible collections
+      tags: [gitlab, cicd, docker, ansible]
+      environment:
+        - Gitlab CI
+        - Python
+        - Docker
+        - Ansible
+    - description: Design of Reverse Proxy and Web Application Firewall configuration to match business requirements and security best practices
+      tags: [cloud, devops, sysops, secops]
+      environment:
+        - Traefik
+        - Apache2
+        - ModSecurity Web Application Firewall
+        - NGINX
+    - description: Design of Reverse Proxy architecture (with WAF, custom middlewares, automated TLS certificate management, rate limiting, caching, ...) based on Netbox
+      tags: [cloud, devops, sysops, secops]
+      environment:
+        - Netbox
+        - Traefik
+        - Apache2
+        - ModSecurity Web Application Firewall
+        - NGINX
+    - description: Implementation of Prometheus Exporter and Healthcheck endpoints to match monitoring requirements
+      tags: [python, prometheus, grafana, monitoring]
+      environment:
+        - Python
+        - Prometheus
+        - Grafana
+        - AlertManager
+        - SNMP
+        - Blackbox
+    - description: Writing Technical Documentation for code and architecture
+      tags: [documentation, backend-dev]
+      environment:
+        - Ansible
+        - AWX
+        - AWS (EC2, VPC, ...)
+        - Docker
+        - Gitlab
+        - Netbox
+    - description: Writing User Guides and Troubleshooting guides for knowledge transfer within the team
+      tags: [documentation, backend-dev]
+      environment:
+        - Kubernetes
+        - Ansible
+        - AWX
+        - Netbox
+    - description: Writing Standard Operating Procedures for system administration tasks and incident response
+      tags: [documentation, backend-dev]
+      environment:
+        - Ansible
+        - AWX
+        - Netbox
 
 - startDate: July 2017
   endDate: On going
@@ -222,30 +377,75 @@
   title: CEO & Co-Founder
   context: Software Editor
   missions:
-    - "Development of a Patient Follow-Up software for Radiology departments: SPRadio"
-    - Development of a mobile application for the organization 3-6-9-12
-    - "Development of a Continuous Integration and Deployment platform: Datapio"
-    - "Development of a Dockerized Supervision engine: Kubirds"
-    - Teaching courses (with ESTIAM and/or SUPINFO)
-    - Marketing strategy & Business Development
-    - Development of a Kubernetes as a Service platform based on k0s
-    - "Development of an OpenSource Log Processing software: FlowG"
-    - Development of a SaaS offering for FlowG based on Netbox and the Netbox Docker Plugin
-    - "Development of an LLM-based document indexing software: LLamapedia"
-  environment:
-    - Windows
-    - Linux
-    - Kubernetes
-    - Datapio
-    - Kubirds
-    - Ansible
-    - Tekton
-    - RabbitMQ
-    - k0s
-    - Go
-    - Elixir
-    - Python
-    - Rust
-    - Netbox
-    - LLMs
-    - MCP
+    - description: "Development of a Patient Follow-Up software for Radiology departments: SPRadio"
+      tags: [python, django, typescript, vuejs, webdev, backend-dev, frontend-dev]
+      environment:
+        - Python
+        - Django
+        - Typescript
+        - VueJS
+    - description: Development of a mobile application for the organization 3-6-9-12
+      tags: [typescript, vuejs, mobile, mobile-dev]
+      environment:
+        - Typescript
+        - VueJS
+    - description: "Development of a Continuous Integration and Deployment platform: Datapio"
+      tags: [linux, kubernetes, cicd, devops, elixir, go, backend-dev, frontend-dev]
+      environment:
+        - Linux
+        - Kubernetes
+        - TektonCD
+        - Elixir
+        - RabbitMQ
+    - description: "Development of a Dockerized Supervision engine: Kubirds"
+      tags: [linux, kubernetes, cicd, devops, elixir, go, monitoring, backend-dev, frontend-dev]
+      environment:
+        - Linux
+        - Kubernetes
+        - TektonCD
+        - Elixir
+        - Go
+    - description: Teaching courses (with ESTIAM and/or SUPINFO)
+      tags: [c, python, linux, training]
+      environment:
+        - Windows
+        - Linux
+        - Python
+        - C
+        - Go
+    - description: Marketing strategy & Business Development
+      tags: [marketing, business-dev]
+      environment: []
+    - description: Development of a Kubernetes as a Service platform based on k0s
+      tags: [linux, kubernetes, devops, cloud, backend-dev]
+      environment:
+        - Linux
+        - Kubernetes
+        - k0s
+        - Netbox
+        - Python
+    - description: "Development of an OpenSource Log Processing software: FlowG"
+      tags: [linux, kubernetes, go, rust, mcp, backend-dev, frontend-dev]
+      environment:
+        - Linux
+        - Kubernetes
+        - Go
+        - Rust
+        - MCP
+    - description: Development of a SaaS offering for FlowG based on Netbox and the Netbox Docker Plugin
+      tags: [linux, kubernetes, go, rust, mcp, netbox, docker, backend-dev, frontend-dev]
+      environment:
+        - Linux
+        - Kubernetes
+        - Go
+        - Rust
+        - MCP
+        - Netbox
+        - Docker
+    - description: "Development of an LLM-based document indexing software: LLamapedia"
+      tags: [linux, python, llms, mcp, backend-dev, frontend-dev]
+      environment:
+        - Linux
+        - Python
+        - LLMs
+        - MCP

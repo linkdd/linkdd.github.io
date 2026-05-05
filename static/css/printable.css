@@ -1,3 +1,9 @@
+@media not print {
+  .is-only-print {
+    display: none !important;
+  }
+}
+
 @media print {
   .is-hidden-print {
     display: none;
@@ -14,8 +20,18 @@
     display: none !important;
   }
 
-  button.button {
-    -webkit-print-color-adjust: exact;
-    color-adjust: exact;
+  hr,
+  button.button,
+  .box {
+    -webkit-print-color-adjust: exact !important;
+    color-adjust: exact !important;
+  }
+
+  .box {
+    break-inside: avoid;
+  }
+
+  #skill-section .is-fullwidth {
+    width: 99% !important;
   }
 }

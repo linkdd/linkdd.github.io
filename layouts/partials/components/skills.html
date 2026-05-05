@@ -1,21 +1,95 @@
-<section class="container px-3">
-  <div class="content">
-    <h2 class="title is-size-2">
-      &#129337;
-      Skills
-    </h2>
+<section class="container px-3" id="skill-section">
+  <h2 class="title is-size-2">
+    &#129337;
+    Skills
+  </h2>
 
-    <table class="table is-fullwidth is-hoverable">
-      <tbody>
-        {{ range $skill := .Site.Data.skills }}
-          <tr>
-            <td><b>{{ $skill.category }}</b></td>
-            <td>{{ delimit $skill.technologies ", " }}</td>
-          </tr>
-        {{ end }}
-      </tbody>
-    </table>
+  <table class="table is-bordered is-narrow is-fullwidth">
+    <tbody>
+      <tr>
+        <th class="is-narrow">Rating:</th>
+        <td class="has-text-centered">
+          <span class="icon is-small has-text-warning"><span class="fas fa-star"></span></span>
+          <span class="icon is-small"><span class="far fa-star"></span></span>
+          <span class="icon is-small"><span class="far fa-star"></span></span>
+          <span class="icon is-small"><span class="far fa-star"></span></span>
+          <span class="icon is-small"><span class="far fa-star"></span></span>
+        </td>
+        <td class="has-text-centered">
+          <span class="icon is-small has-text-warning"><span class="fas fa-star"></span></span>
+          <span class="icon is-small has-text-warning"><span class="fas fa-star"></span></span>
+          <span class="icon is-small"><span class="far fa-star"></span></span>
+          <span class="icon is-small"><span class="far fa-star"></span></span>
+          <span class="icon is-small"><span class="far fa-star"></span></span>
+        </td>
+        <td class="has-text-centered">
+          <span class="icon is-small has-text-warning"><span class="fas fa-star"></span></span>
+          <span class="icon is-small has-text-warning"><span class="fas fa-star"></span></span>
+          <span class="icon is-small has-text-warning"><span class="fas fa-star"></span></span>
+          <span class="icon is-small"><span class="far fa-star"></span></span>
+          <span class="icon is-small"><span class="far fa-star"></span></span>
+        </td>
+        <td class="has-text-centered">
+          <span class="icon is-small has-text-warning"><span class="fas fa-star"></span></span>
+          <span class="icon is-small has-text-warning"><span class="fas fa-star"></span></span>
+          <span class="icon is-small has-text-warning"><span class="fas fa-star"></span></span>
+          <span class="icon is-small has-text-warning"><span class="fas fa-star"></span></span>
+          <span class="icon is-small"><span class="far fa-star"></span></span>
+        </td>
+        <td class="has-text-centered">
+          <span class="icon is-small has-text-warning"><span class="fas fa-star"></span></span>
+          <span class="icon is-small has-text-warning"><span class="fas fa-star"></span></span>
+          <span class="icon is-small has-text-warning"><span class="fas fa-star"></span></span>
+          <span class="icon is-small has-text-warning"><span class="fas fa-star"></span></span>
+          <span class="icon is-small has-text-warning"><span class="fas fa-star"></span></span>
+        </td>
+      </tr>
+      <tr>
+        <th class="is-narrow">Level:</th>
+        <td class="has-text-centered">Beginner</td>
+        <td class="has-text-centered">Junior</td>
+        <td class="has-text-centered">Intermediate</td>
+        <td class="has-text-centered">Senior</td>
+        <td class="has-text-centered">Expert</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="fixed-grid has-3-cols-widescreen">
+    <div class="grid">
+      {{ range $skill := .Site.Data.skills }}
+        <div data-skill-category="{{ $skill.category }}" class="cell box is-radiusless">
+          <p class="is-uppercase has-text-weight-bold">
+            {{ $skill.category }}
+          </p>
+
+          <table class="table is-narrow is-fullwidth is-hoverable is-size-7">
+            <tbody>
+              {{ range $tech := $skill.technologies }}
+                <tr data-skill-tags="{{ $tech.tags | jsonify }}" data-skill-rating="{{ $tech.rating }}">
+                  <td>
+                    {{ $tech.name }}
+                  </td>
+                  <td class="has-text-right">
+                    {{ range seq 1 $tech.rating }}
+                      <span class="icon is-small has-text-warning"><span class="fas fa-star"></span></span>
+                    {{ end }}
+                    {{ if ne $tech.rating 5 }}
+                      {{ range seq (add 1 $tech.rating) 5 }}
+                        <span class="icon is-small"><span class="far fa-star"></span></span>
+                      {{ end }}
+                    {{ end }}
+                  </td>
+                </tr>
+              {{ end }}
+            </tbody>
+          </table>
+        </div>
+      {{ end }}
+    </div>
   </div>
 
-  <hr/>
+  <canvas id="skill-chart" style="width: 33%; margin: auto;"></canvas>
+
+  <hr />
 </section>

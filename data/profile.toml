@@ -1,4 +1,3 @@
-title = "DevOps Engineer"
 nickname = "@linkdd"
 fullname = "David Delassus"
 picture = "/img/david-delassus.png"
@@ -7,3 +6,38 @@ email = "david.jose.delassus@gmail.com"
 birthday = "December 16th, 1993"
 
 contributions_image = "https://ghchart.rshah.org/linkdd"
+
+[[focus]]
+
+title = "DevOps Engineer"
+tags = ["devops", "cloud", "sysops", "automation", "monitoring"]
+
+[[focus]]
+
+title = "Kubernetes & Go Expert"
+tags = ["k8s", "kubernetes", "cloud", "go"]
+
+[[focus]]
+
+title = "Full Stack Developer"
+tags = ["webdev", "backend-dev", "frontend-dev", "mobile-dev"]
+
+[[focus]]
+
+title = "Python Backend Developer"
+tags = ["python", "backend", "web", "api", "database"]
+
+[[focus]]
+
+title = "React Frontend Developer"
+tags = ["react", "frontend", "webdev", "javascript", "typescript"]
+
+[[focus]]
+
+title = "Low-level System Developer"
+tags = ["low-level", "system", "c", "c++", "assembly"]
+
+[[focus]]
+
+title = "Teacher"
+tags = ["training", "documentation"]

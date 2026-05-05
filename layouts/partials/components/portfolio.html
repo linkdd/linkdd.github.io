@@ -1,0 +1,20 @@
+<section class="container px-3" id="cv-projects">
+  <h2 class="title is-size-2">
+    &#128196;
+    Projects
+  </h2>
+
+  <table class="table is-narrow is-fullwidth is-hoverable">
+    <tbody>
+      {{ range .Site.Data.portfolio.project }}
+        <tr data-project-tags="{{ .tags | jsonify }}">
+          <td><b>{{ .name }}</b></td>
+          <td>{{ .description }}</td>
+          <td class="has-text-right is-italic">{{ delimit .stack ", " }}</td>
+        </tr>
+      {{ end }}
+    </tbody>
+  </table>
+
+  <hr />
+</section>
