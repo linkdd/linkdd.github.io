@@ -7,12 +7,12 @@
 
 <section class="container px-3 mb-6">
   <div class="content">
-    <h2 class="title is-size-2">
+    <h2 class="title is-size-4">
       &#128197;
       Experience
     </h2>
 
-    <div class="timeline">
+    <div class="timeline is-hidden-print">
       {{ range $jobs_reversed }}
         <div class="timeline-item" data-job>
           <div class="timeline-marker is-link is-icon">
@@ -54,6 +54,57 @@
             </article>
           </div>
         </div>
+      {{ end }}
+    </div>
+
+    <div class="is-only-print">
+      {{ range $jobs_reversed }}
+        <article class="job">
+          <table class="table is-narrow is-fullwidth">
+            <tbody class="no-break">
+              <tr>
+                <td class="is-narrow">
+                  <span class="has-text-weight-bold">From: </span>
+                  {{ .startDate }}
+                </td>
+                <td>
+                  <span class="has-text-weight-bold">{{ .title }}</span>
+                  <span class="is-italic"> at </span>
+                  <span class="has-text-weight-bold">{{ .company }}</span>
+                </td>
+              </tr>
+              <tr>
+                <td class="is-narrow">
+                  <span class="has-text-weight-bold">To: </span>
+                  {{ .endDate }}
+                </td>
+                <td class="has-text-info has-text-weight-bold is-italic">
+                  Context: {{ .context | markdownify }}
+                </td>
+              </tr>
+            </tbody>
+            <tbody>
+              <tr>
+                <td colspan="2">
+                  <b>Missions:</b>
+
+                  <ul>
+                    {{ range .missions }}
+                      <li class="no-break">
+                        {{ .description | markdownify }}
+                        <br />
+                        {{ if .environment }}
+                        <b>Environment: </b>
+                        <span class="is-italic">{{ delimit .environment ", " }}</span>
+                        {{ end }}
+                      </li>
+                    {{ end }}
+                  </ul>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </article>
       {{ end }}
     </div>
   </div>

@@ -5,18 +5,15 @@
   context: Internship at the software development division
   missions:
     - description: Development of internal tooling for sales and IT teams
-      tags: [python, django, backend-dev]
       environment:
         - Python
         - Django
     - description: Implementation of CPS (*Carte de professionnel Santé*) based authentication in Ubinect
-      tags: [linux, apache2, lemonldap, sysops, backend-dev]
       environment:
         - Linux
         - Apache2
         - LemonLDAP::NG
     - description: Development of statistical views in Ubinect
-      tags: [python, django, webdev, backend-dev]
       environment:
         - Python
         - Django
@@ -28,55 +25,44 @@
   context: "Development of an Open Source hypervisor: Canopsis"
   missions:
     - description: Development of data collectors for *Canopsis*
-      tags: [python, system, backend-dev]
       environment:
         - Python
     - description: Development of processing engines for *Canopsis*
-      tags: [python, system, backend-dev]
       environment:
         - Python
         - RabbitMQ
         - MongoDB
     - description: Development of widgets for the Web UI of *Canopsis*
-      tags: [javascript, emberjs, webdev, frontend-dev]
       environment:
         - Javascript
         - EmberJS
     - description: Implementation of installation procedure of *Canopsis* (shell based, then Ansible)
-      tags: [linux, shell, ansible, sysops, automation]
       environment:
         - Linux
         - Shell
         - Ansible
     - description: Installation on end-user's infrastructure (RATP) and application management
-      tags: [linux, shell, ansible, vmware, sysops]
       environment:
         - Linux
         - Shell
         - Ansible
         - VMWare
     - description: Documentation of the installation and exploitation procedure of *Canopsis* for RATP
-      tags: [documentation]
       environment: []
     - description: End-user training for *Canopsis* at RATP
-      tags: [training]
       environment: []
     - description: Quality Assurance procedure with end-users at RATP
-      tags: [qa]
       environment: []
     - description: Development of a Graph Database for a universal CMDB
-      tags: [python, backend, database, backend-dev]
       environment:
         - Python
         - Riak
     - description: Python training with *Pôle Emploi* during many **POE**
-      tags: [linux, shell, python, training]
       environment:
         - Linux
         - Shell
         - Python
     - description: Implementation of High Availability for *Canopsis*
-      tags: [linux, haproxy, keepalived, sysops, ha, backend-dev]
       environment:
         - Linux
         - HAProxy
@@ -89,7 +75,6 @@
   context: First-year university courses
   missions:
     - description: C & Python training with classrooms of 30 students on average
-      tags: [c, python, training]
       environment:
         - Python
         - C
@@ -103,17 +88,14 @@
   context: Feature Development for the projects of the software editor ELONET
   missions:
     - description: Development of plugins for Dolibarr
-      tags: [php, dolibarr, webdev, frontend-dev]
       environment:
         - Linux
         - PHP
         - Dolibarr
     - description: Development of a monitoring solution to observe access to mails attached files
-      tags: [php, monitoring, backend-dev]
       environment:
         - PHP
     - description: "Development of an alerting system for the decentralized supervision software: Decmon"
-      tags: [python, monitoring, backend-dev]
       environment:
         - Linux
         - Python
@@ -126,39 +108,31 @@
   context: 4th and 5th year university courses
   missions:
     - description: C Development for Arduino
-      tags: [c, arduino, training]
       environment:
         - C
         - Arduino
     - description: Advanced Javascript Development
-      tags: [javascript, webdev, training]
       environment:
         - Javascript
     - description: Web Development with Symfony
-      tags: [php, symfony, webdev, training]
       environment:
         - PHP
         - Symfony
     - description: Prestashop plugin development
-      tags: [php, prestashop, webdev, training]
       environment:
         - PHP
         - Prestashop
     - description: Linux System Administration
-      tags: [linux, sysops, training]
       environment:
         - Linux
     - description: Advanced Network Architecture
-      tags: [linux, network, training]
       environment:
         - Linux
         - Cisco IOS
     - description: Data Transformation and integration with Talend
-      tags: [talend, bigdata, dataviz, training]
       environment:
         - Talend
     - description: Data Visualization
-      tags: [python, tensorflow, dataviz, training]
       environment:
         - IPython (Jupyter)
         - Tensorflow
@@ -170,7 +144,6 @@
   context: Feature development for the projects of the software editor Scille with the *Ministère de l'intérieur* and the *Ministère de la défense*
   missions:
     - description: Implementation of replication between MongoDB and PostgreSQL for the Analytics team of the *SIAEF* project at the **DGEF**
-      tags: [python, mongodb, postgresql, backend-dev]
       environment:
         - Linux
         - Python
@@ -179,19 +152,16 @@
         - SolR
         - SuperSet
     - description: Improvements on the test suite of the *SIAEF* project
-      tags: [python, testing, backend-dev]
       environment:
         - Python
         - pytest
         - Hypothesis
     - description: Implementation of a PostgreSQL backend for the Open Source secure cloud software *Parsec*
-      tags: [python, postgresql, backend-dev]
       environment:
         - Python
         - PostgreSQL
         - Flask
     - description: Implementation of folder synchronization for *Parsec*
-      tags: [python, postgresql, backend-dev]
       environment:
         - Python
         - PostgreSQL
@@ -204,7 +174,6 @@
   context: Feature Development for Big Data projects at IT-CE
   missions:
     - description: Implementation of an automated deployment solution of Python/R environments on an Hadoop/Spark based infrastructure
-      tags: [automation, bigdata, backend-dev]
       environment:
         - Windows
         - Python
@@ -214,7 +183,6 @@
         - Spark
         - Git
     - description: Tooling Documentation
-      tags: [documentation, backend-dev]
       environment: []
 
 - startDate: July 2018
@@ -224,14 +192,12 @@
   context: DevOps engineer for the Retail teams at Decathlon
   missions:
     - description: Weekly delivery of internal applications in Pre-Production environments
-      tags: [linux, kubernetes, cicd, devops]
       environment:
         - Linux
         - Kubernetes
         - Rancher
         - Jenkins
     - description: Automation of Integration and Deployment workflows
-      tags: [linux, kubernetes, cicd, devops]
       environment:
         - Linux
         - Kubernetes
@@ -241,14 +207,12 @@
         - ArgoCD
         - TektonCD
     - description: Coaching of developers on Production Deployment workflows
-      tags: [devops, cicd, training]
       environment:
         - Windows
         - Linux
         - Java/Groovy
         - SpringBoot
     - description: Development/Pre-Production/Production infrastructure management
-      tags: [kubernetes, elk, tick, springboot, postgresql, devops]
       environment:
         - Kubernetes
         - ELK
@@ -256,7 +220,6 @@
         - SpringBoot
         - PostgreSQL
     - description: Micro Service infrastructure management (secret management, CI/CD, ...)
-      tags: [linux, kubernetes, jenkins, ansible, devops]
       environment:
         - Linux
         - Kubernetes
@@ -272,18 +235,15 @@
   context: Financica accounting application
   missions:
     - description: Python Backend development
-      tags: [python, django, postgresql, backend-dev]
       environment:
         - Python
         - Django
         - PostgreSQL
     - description: Frontend development
-      tags: [typescript, react, webdev, frontend-dev]
       environment:
         - TypeScript
         - React
     - description: AWS infrastructure management with Terraform
-      tags: [aws, terraform, devops, cloud]
       environment:
         - AWS (EC2, RDS, VPC, S3)
         - Terraform
@@ -296,12 +256,10 @@
   context: System administrator
   missions:
     - description: Development of features on Netbox plugins for Reverse Proxies and Docker orchestration
-      tags: [python, netbox, backend-dev, automation]
       environment:
         - Python
         - Netbox
     - description: Development of a Netbox Webhook handler to automate live configuration updates on Reverse Proxies
-      tags: [python, netbox, backend-dev, automation]
       environment:
         - Python
         - Netbox
@@ -310,7 +268,6 @@
         - ModSecurity Web Application Firewall
         - NGINX
     - description: Development of Ansible roles and playbooks to orchestrate Docker-based services via Netbox and AWX
-      tags: [ansible, docker, netbox, automation]
       environment:
         - Python
         - Ansible
@@ -318,21 +275,18 @@
         - Netbox
         - Docker
     - description: Development of Gitlab CI/CD pipelines to build, test and release Python projects, Docker images, and Ansible collections
-      tags: [gitlab, cicd, docker, ansible]
       environment:
         - Gitlab CI
         - Python
         - Docker
         - Ansible
     - description: Design of Reverse Proxy and Web Application Firewall configuration to match business requirements and security best practices
-      tags: [cloud, devops, sysops, secops]
       environment:
         - Traefik
         - Apache2
         - ModSecurity Web Application Firewall
         - NGINX
     - description: Design of Reverse Proxy architecture (with WAF, custom middlewares, automated TLS certificate management, rate limiting, caching, ...) based on Netbox
-      tags: [cloud, devops, sysops, secops]
       environment:
         - Netbox
         - Traefik
@@ -340,7 +294,6 @@
         - ModSecurity Web Application Firewall
         - NGINX
     - description: Implementation of Prometheus Exporter and Healthcheck endpoints to match monitoring requirements
-      tags: [python, prometheus, grafana, monitoring]
       environment:
         - Python
         - Prometheus
@@ -349,7 +302,6 @@
         - SNMP
         - Blackbox
     - description: Writing Technical Documentation for code and architecture
-      tags: [documentation, backend-dev]
       environment:
         - Ansible
         - AWX
@@ -358,14 +310,12 @@
         - Gitlab
         - Netbox
     - description: Writing User Guides and Troubleshooting guides for knowledge transfer within the team
-      tags: [documentation, backend-dev]
       environment:
         - Kubernetes
         - Ansible
         - AWX
         - Netbox
     - description: Writing Standard Operating Procedures for system administration tasks and incident response
-      tags: [documentation, backend-dev]
       environment:
         - Ansible
         - AWX
@@ -378,19 +328,16 @@
   context: Software Editor
   missions:
     - description: "Development of a Patient Follow-Up software for Radiology departments: SPRadio"
-      tags: [python, django, typescript, vuejs, webdev, backend-dev, frontend-dev]
       environment:
         - Python
         - Django
         - Typescript
         - VueJS
     - description: Development of a mobile application for the organization 3-6-9-12
-      tags: [typescript, vuejs, mobile, mobile-dev]
       environment:
         - Typescript
         - VueJS
     - description: "Development of a Continuous Integration and Deployment platform: Datapio"
-      tags: [linux, kubernetes, cicd, devops, elixir, go, backend-dev, frontend-dev]
       environment:
         - Linux
         - Kubernetes
@@ -398,7 +345,6 @@
         - Elixir
         - RabbitMQ
     - description: "Development of a Dockerized Supervision engine: Kubirds"
-      tags: [linux, kubernetes, cicd, devops, elixir, go, monitoring, backend-dev, frontend-dev]
       environment:
         - Linux
         - Kubernetes
@@ -406,7 +352,6 @@
         - Elixir
         - Go
     - description: Teaching courses (with ESTIAM and/or SUPINFO)
-      tags: [c, python, linux, training]
       environment:
         - Windows
         - Linux
@@ -414,10 +359,8 @@
         - C
         - Go
     - description: Marketing strategy & Business Development
-      tags: [marketing, business-dev]
       environment: []
     - description: Development of a Kubernetes as a Service platform based on k0s
-      tags: [linux, kubernetes, devops, cloud, backend-dev]
       environment:
         - Linux
         - Kubernetes
@@ -425,7 +368,6 @@
         - Netbox
         - Python
     - description: "Development of an OpenSource Log Processing software: FlowG"
-      tags: [linux, kubernetes, go, rust, mcp, backend-dev, frontend-dev]
       environment:
         - Linux
         - Kubernetes
@@ -433,7 +375,6 @@
         - Rust
         - MCP
     - description: Development of a SaaS offering for FlowG based on Netbox and the Netbox Docker Plugin
-      tags: [linux, kubernetes, go, rust, mcp, netbox, docker, backend-dev, frontend-dev]
       environment:
         - Linux
         - Kubernetes
@@ -443,7 +384,6 @@
         - Netbox
         - Docker
     - description: "Development of an LLM-based document indexing software: LLamapedia"
-      tags: [linux, python, llms, mcp, backend-dev, frontend-dev]
       environment:
         - Linux
         - Python

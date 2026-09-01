@@ -3,67 +3,57 @@
 name = "FlowG"
 description = "OpenSource Log Processing software"
 stack = ["Go", "Rust"]
-tags = ["go", "rust", "backend-dev", "frontend-dev", "monitoring"]
 
 [[project]]
 
 name = "krouter"
 description = "Fully compliant Kubernetes Gateway API implementation"
 stack = ["Kubernetes", "Go"]
-tags = ["go", "kubernetes", "devops", "dev"]
 
 [[project]]
 
 name = "Kubirds"
 description = "Dockerized Supervision engine"
 stack = ["Kubernetes", "Elixir", "Go"]
-tags = ["linux", "kubernetes", "cicd", "devops", "elixir", "go", "monitoring", "backend-dev", "frontend-dev"]
 
 [[project]]
 
 name = "Tricorder"
 description = "Automation the KISS way, no YAML involved"
 stack = ["Rust"]
-tags = ["automation", "rust", "backend-dev", "frontend-dev"]
 
 [[project]]
 
 name = "Trollworks"
 description = "C++ 3D Game Engine with Editor"
 stack = ["C++", "OpenGL"]
-tags = ["cpp", "gamedev"]
 
 [[project]]
 
 name = "SlightX"
 description = "Hobby Operating System"
 stack = ["C", "Assembly x86_64"]
-tags = ["osdev", "c", "assembly", "system", "dev"]
 
 [[project]]
 
 name = "gotempl"
 description = "Generic templating tool"
 stack = ["Go"]
-tags = ["go", "cli", "dev"]
 
 [[project]]
 
 name = "procfusion"
 description = "Process manager for Docker images"
 stack = ["Rust"]
-tags = ["rust", "docker", "cli", "backend-dev"]
 
 [[project]]
 
 name = "Datapio"
 description = "Continuous Integration and Deployment platform"
 stack = ["Kubernetes", "Elixir", "Go"]
-tags = ["linux", "kubernetes", "cicd", "devops", "elixir", "go", "backend-dev", "frontend-dev"]
 
 [[project]]
 
 name = "Letlang"
 description = "Compiler for a homemade functional programming language"
 stack = ["Rust"]
-tags = ["plt", "compiler", "rust", "dev"]

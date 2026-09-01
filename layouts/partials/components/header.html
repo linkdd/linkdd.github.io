@@ -84,20 +84,5 @@
     </div>
   </div>
 
-  <h1 class="title is-size-3 has-text-centered">
-    <div class="select is-hidden-print">
-      <select id="cv-focus-selector">
-        <option value="null">Senior Engineer</option>
-
-        {{ range .Site.Data.profile.focus }}
-          <option value="{{ .tags | jsonify }}">{{ .title }}</option>
-        {{ end }}
-      </select>
-    </div>
-    <div class="is-only-print" id="cv-title">
-      Senior Engineer
-    </div>
-  </h1>
-
-  <hr/>
+  <hr class="is-hidden-print" />
 </header>

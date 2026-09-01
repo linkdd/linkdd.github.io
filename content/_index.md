@@ -12,7 +12,3 @@ I am currently working on:
 
  - [FlowG](https://flowg.cloud/): A low-code log processing solution
  - [krouter](https://krouter.cloud/): A fully compliant Kubernetes Gateway API implementation
- - [Kubirds](https://kubirds.com): A Cloud-Native supervision engine
- - [Datapio](https://datapio.co): A complete CI/CD platform
- - [Letlang](https://letlang.dev): functional programming language
- - [tricorder](https://linkdd.github.io/tricorder/): Automation the KISS way, no YAML involved
