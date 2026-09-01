@@ -1,3 +1,7 @@
+.no-break {
+  break-inside: avoid;
+}
+
 @media not print {
   .is-only-print {
     display: none !important;
@@ -10,25 +14,40 @@
   }
 
   section.container,
-  header.container,
-  .timeline-item {
+  header.container {
     margin: 0 !important;
     padding: 0 !important;
   }
 
-  .timeline-marker {
-    display: none !important;
-  }
-
   hr,
   button.button,
-  .box {
+  span.tag,
+  .job {
     -webkit-print-color-adjust: exact !important;
     color-adjust: exact !important;
   }
 
-  .box {
-    break-inside: avoid;
+  .job {
+    margin-bottom: 1rem;
+
+    border-top: 2px solid hsl(217, 71%, 53%);
+  }
+
+  .job table, .job tr, .job th, .job td {
+    border: none !important;
+  }
+
+  .job ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .job li {
+    border-left: 2px solid hsl(217, 71%, 53%);
+    padding-left: 0.5rem;
+    margin: 0;
+    margin-bottom: 0.75rem;
   }
 
   #skill-section .is-fullwidth {
