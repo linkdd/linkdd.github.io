@@ -1,4 +1,6 @@
-export type GroupBoxProps = {
+import type { ComponentPropsWithoutRef } from 'react'
+
+
+export type GroupBoxProps = ComponentPropsWithoutRef<'fieldset'> & {
   legend?: string
-  children?: React.ReactNode
 }
