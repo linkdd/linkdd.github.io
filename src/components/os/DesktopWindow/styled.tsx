@@ -5,6 +5,10 @@ import Button from '@/components/base/Button'
 export const WindowFrame = styled.section`
   position: absolute;
   outline: none;
+  &[data-minimized='true'] {
+    visibility: hidden;
+    pointer-events: none;
+  }
 
   & > .window {
     height: 100%;
@@ -65,4 +69,15 @@ export const ResizeHandle = styled(Button)`
     #808080 2px 3px,
     white 3px 4px
   );
+`
+
+export const AnimatedOutline = styled.div`
+  position: fixed;
+  z-index: 2147483647;
+  pointer-events: none;
+  visibility: hidden;
+  box-sizing: border-box;
+  border: 3px solid white;
+  outline: 2px solid black;
+  mix-blend-mode: difference;
 `

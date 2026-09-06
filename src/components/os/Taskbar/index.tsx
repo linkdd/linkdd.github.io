@@ -26,6 +26,7 @@ export default function Taskbar({
             <Button
               variant="default"
               key={app.id}
+              data-task-app={app.id}
               className={active ? 'active' : ''}
               aria-pressed={active}
               title={app.title}

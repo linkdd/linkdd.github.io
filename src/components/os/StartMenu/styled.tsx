@@ -27,6 +27,25 @@ export const StartMenuPanel = styled.nav`
   overflow: auto;
   display: flex;
 
+  clip-path: inset(100% 0 0);
+  visibility: hidden;
+  pointer-events: none;
+
+  transition:
+    clip-path 140ms steps(8, end),
+    visibility 0s 140ms;
+
+  &[data-open='true'] {
+    clip-path: inset(0);
+    visibility: visible;
+    pointer-events: auto;
+    transition-delay: 0s;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    transition: none;
+  }
+
   & > div:last-child {
     flex: 1;
   }

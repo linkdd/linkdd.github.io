@@ -59,32 +59,33 @@ export default function StartMenu({ links }: StartMenuProps) {
         <strong>Start</strong>
       </StartButton>
 
-      {menuOpen && (
-        <StartMenuPanel
-          className="window"
-          id="desktop-start-menu"
-          aria-label="Profiles"
-        >
-          <Brand>
-            David Delassus
-          </Brand>
+      <StartMenuPanel
+        className="window"
+        id="desktop-start-menu"
+        aria-label="Profiles"
+        data-open={menuOpen}
+        inert={!menuOpen}
+        aria-hidden={!menuOpen}
+      >
+        <Brand>
+          David Delassus
+        </Brand>
 
-          <div>
-            {links.map(link => (
-              <ProfileLink
-                key={link.url}
-                href={link.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                onClick={() => setMenuOpen(false)}
-              >
-                <img src={link.icon} alt="" />
-                {link.title}
-              </ProfileLink>
-            ))}
-          </div>
-        </StartMenuPanel>
-      )}
+        <div>
+          {links.map(link => (
+            <ProfileLink
+              key={link.url}
+              href={link.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => setMenuOpen(false)}
+            >
+              <img src={link.icon} alt="" />
+              {link.title}
+            </ProfileLink>
+          ))}
+        </div>
+      </StartMenuPanel>
     </StartArea>
   )
 }
