@@ -5,6 +5,7 @@ export const SourceLogo = styled.img`
   display: block;
   width: 24px;
   height: 24px;
+  margin-inline: auto;
   object-fit: contain;
 `
 
@@ -31,13 +32,18 @@ export const TableLayout = styled.div`
 
   & td {
     padding: 6px;
-    vertical-align: top;
+    vertical-align: middle;
     white-space: normal;
   }
 
   & td:first-child,
   & td:last-child {
     white-space: nowrap;
+  }
+
+  & th:first-child,
+  & td:first-child {
+    text-align: center;
   }
 
   & .highlighted a {
