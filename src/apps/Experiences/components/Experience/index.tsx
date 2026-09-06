@@ -18,12 +18,13 @@ export default function Experience(props: ExperienceProps) {
 
       {props.missions.map((mission, index) => (
         <JobMission key={index}>
-          <p>{mission.description}</p>
+          {mission.description}
 
           {mission.environment.length > 0 && (
-            <p>
+            <>
+              <br/>
               <strong>Environment:</strong> {mission.environment.join(', ')}
-            </p>
+            </>
           )}
         </JobMission>
       ))}

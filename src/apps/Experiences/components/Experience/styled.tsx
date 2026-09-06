@@ -1,5 +1,8 @@
 import styled from '@emotion/styled'
 
+import GroupBox from '@/components/base/GroupBox'
+
+
 export const JobHeader = styled.div`
   display: flex;
   flex-direction: row;
@@ -30,8 +33,8 @@ export const JobDescription = styled.div`
   gap: 0.25rem;
 `
 
-export const JobMission = styled.div`
-  margin-top: 1rem;
-  padding: 0.75rem;
+export const JobMission = styled(GroupBox)`
+  margin-top: 0.5rem;
+  padding: 0.5rem;
   background: #dfdfdf;
 `
