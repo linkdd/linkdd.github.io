@@ -5,7 +5,7 @@ import { Shortcut, Icon } from './styled'
 
 export default function DesktopShortcut({ app, onOpen }: DesktopShortcutProps) {
   return (
-    <Shortcut onDoubleClick={() => onOpen(app)}>
+    <Shortcut onClick={() => onOpen(app)}>
       <Icon aria-hidden="true">
         {app.icon}
       </Icon>
