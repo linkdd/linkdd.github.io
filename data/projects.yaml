@@ -1,0 +1,58 @@
+- name: FlowG
+  description: OpenSource Log Processing software
+  stack:
+    - Go
+    - Rust
+  website: https://flowg.cloud
+- name: krouter
+  description: Fully compliant Kubernetes Gateway API implementation
+  stack:
+    - Kubernetes
+    - Go
+  website: https://krouter.cloud
+- name: Kubirds
+  description: Dockerized Supervision engine
+  stack:
+    - Kubernetes
+    - Elixir
+    - Go
+  website: https://kubirds.com
+- name: Tricorder
+  description: Automation the KISS way, no YAML involved
+  stack:
+    - Rust
+  website: https://github.com/linkddd/tricorder
+- name: Trollworks
+  description: C++ 3D Game Engine with Editor
+  stack:
+    - C++
+    - OpenGL
+  website: null
+- name: SlightX
+  description: Hobby Operating System
+  stack:
+    - C
+    - Assembly x86_64
+  website: null
+- name: gotempl
+  description: Generic templating tool
+  stack:
+    - Go
+  website: https://github.com/link-society/gotempl
+- name: procfusion
+  description: Process manager for Docker images
+  stack:
+    - Rust
+  website: https://github.com/linkdd/procfuion
+- name: Datapio
+  description: Continuous Integration and Deployment platform
+  stack:
+    - Kubernetes
+    - Elixir
+    - Go
+  website: https://datapio.co
+- name: Letlang
+  description: Compiler for a homemade functional programming language
+  stack:
+    - Rust
+  website: https://letlang.dev

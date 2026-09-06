@@ -1,0 +1,9 @@
+- source: linuxfr
+  label: LinuxFR
+  url: https://linuxfr.org/users/linkdd.atom
+- source: medium
+  label: Medium
+  url: https://medium.com/feed/@david-delassus
+- source: devto
+  label: DevTo
+  url: https://dev.to/api/articles?username=linkdd&per_page=10

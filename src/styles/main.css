@@ -1,0 +1,23 @@
+html,
+body,
+#root {
+  margin: 0;
+  padding: 0;
+
+  width: 100%;
+  height: 100dvh;
+  overflow: hidden;
+}
+
+#root {
+  background-color: #008080;
+}
+
+/* 98.css styles both button slots at each end on double-button scrollbars.
+   Keep only the backward button at the start and forward button at the end. */
+::-webkit-scrollbar-button:start:increment,
+::-webkit-scrollbar-button:end:decrement {
+  display: none;
+  width: 0;
+  height: 0;
+}

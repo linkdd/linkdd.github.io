@@ -1,0 +1,420 @@
+categories:
+  - DevOps
+  - Backend
+  - Fullstack
+  - Teaching
+entries:
+  - id: 9h37
+    category: Fullstack
+    startDate: November 2011
+    endDate: June 2013
+    company: 9h37 SAS
+    title: Python Software Developer
+    context: Internship at the software development division
+    missions:
+      - description: Development of internal tooling for sales and IT teams
+        environment:
+          - Python
+          - Django
+      - description: Implementation of CPS (*Carte de professionnel Santé*) based authentication in Ubinect
+        environment:
+          - Linux
+          - Apache2
+          - LemonLDAP::NG
+      - description: Development of statistical views in Ubinect
+        environment:
+          - Python
+          - Django
+  - id: capensis
+    category: Fullstack
+    startDate: July 2013
+    endDate: November 2016
+    company: Capensis
+    title: Python Software Developer / System Administrator / Trainer
+    context: "Development of an Open Source hypervisor: Canopsis"
+    missions:
+      - description: Development of data collectors for *Canopsis*
+        environment:
+          - Python
+      - description: Development of processing engines for *Canopsis*
+        environment:
+          - Python
+          - RabbitMQ
+          - MongoDB
+      - description: Development of widgets for the Web UI of *Canopsis*
+        environment:
+          - Javascript
+          - EmberJS
+      - description: Implementation of installation procedure of *Canopsis* (shell based, then Ansible)
+        environment:
+          - Linux
+          - Shell
+          - Ansible
+      - description: Installation on end-user's infrastructure (RATP) and application management
+        environment:
+          - Linux
+          - Shell
+          - Ansible
+          - VMWare
+      - description: Documentation of the installation and exploitation procedure of *Canopsis* for RATP
+        environment: []
+      - description: End-user training for *Canopsis* at RATP
+        environment: []
+      - description: Quality Assurance procedure with end-users at RATP
+        environment: []
+      - description: Development of a Graph Database for a universal CMDB
+        environment:
+          - Python
+          - Riak
+      - description: Python training with *Pôle Emploi* during many **POE**
+        environment:
+          - Linux
+          - Shell
+          - Python
+      - description: Implementation of High Availability for *Canopsis*
+        environment:
+          - Linux
+          - HAProxy
+          - Keepalived
+  - id: supinfo
+    category: Teaching
+    startDate: "2013"
+    endDate: "2015"
+    company: SUPINFO
+    title: Freelance Teacher
+    context: First-year university courses
+    missions:
+      - description: C & Python training with classrooms of 30 students on average
+        environment:
+          - Python
+          - C
+          - Windows
+          - Linux
+  - id: elonet
+    category: Backend
+    startDate: November 2016
+    endDate: February 2017
+    company: ELONET
+    title: Freelance PHP / Python Developer
+    context: Feature Development for the projects of the software editor ELONET
+    missions:
+      - description: Development of plugins for Dolibarr
+        environment:
+          - Linux
+          - PHP
+          - Dolibarr
+      - description: Development of a monitoring solution to observe access to mails attached files
+        environment:
+          - PHP
+      - description: "Development of an alerting system for the decentralized supervision software: Decmon"
+        environment:
+          - Linux
+          - Python
+          - ElasticSearch
+  - id: estiam
+    category: Teaching
+    startDate: "2017"
+    endDate: "2019"
+    company: ESTIAM
+    title: Freelance Teacher
+    context: 4th and 5th year university courses
+    missions:
+      - description: C Development for Arduino
+        environment:
+          - C
+          - Arduino
+      - description: Advanced Javascript Development
+        environment:
+          - Javascript
+      - description: Web Development with Symfony
+        environment:
+          - PHP
+          - Symfony
+      - description: Prestashop plugin development
+        environment:
+          - PHP
+          - Prestashop
+      - description: Linux System Administration
+        environment:
+          - Linux
+      - description: Advanced Network Architecture
+        environment:
+          - Linux
+          - Cisco IOS
+      - description: Data Transformation and integration with Talend
+        environment:
+          - Talend
+      - description: Data Visualization
+        environment:
+          - IPython (Jupyter)
+          - Tensorflow
+  - id: scille
+    category: Backend
+    startDate: March 2017
+    endDate: March 2018
+    company: Scille
+    title: Freelance Python Developer
+    context: Feature development for the projects of the software editor Scille with the *Ministère de
+      l'intérieur* and the *Ministère de la défense*
+    missions:
+      - description: Implementation of replication between MongoDB and PostgreSQL for the Analytics team of
+          the *SIAEF* project at the **DGEF**
+        environment:
+          - Linux
+          - Python
+          - MongoDB
+          - PostgreSQL
+          - SolR
+          - SuperSet
+      - description: Improvements on the test suite of the *SIAEF* project
+        environment:
+          - Python
+          - pytest
+          - Hypothesis
+      - description: Implementation of a PostgreSQL backend for the Open Source secure cloud software *Parsec*
+        environment:
+          - Python
+          - PostgreSQL
+          - Flask
+      - description: Implementation of folder synchronization for *Parsec*
+        environment:
+          - Python
+          - PostgreSQL
+          - Flask
+  - id: proxiad-it-ce
+    documentName: IT-CE
+    category: DevOps
+    startDate: April 2018
+    endDate: June 2018
+    company: PROXIAD
+    title: Freelance Python Developer / System Administrator
+    context: Feature Development for Big Data projects at IT-CE
+    missions:
+      - description: Implementation of an automated deployment solution of Python/R environments on an
+          Hadoop/Spark based infrastructure
+        environment:
+          - Windows
+          - Python
+          - Anaconda
+          - Ansible
+          - Hadoop
+          - Spark
+          - Git
+      - description: Tooling Documentation
+        environment: []
+  - id: proxiad-decathlon
+    documentName: Decathlon
+    category: DevOps
+    startDate: July 2018
+    endDate: September 2020
+    company: PROXIAD
+    title: Freelance DevOps Engineer
+    context: DevOps engineer for the Retail teams at Decathlon
+    missions:
+      - description: Weekly delivery of internal applications in Pre-Production environments
+        environment:
+          - Linux
+          - Kubernetes
+          - Rancher
+          - Jenkins
+      - description: Automation of Integration and Deployment workflows
+        environment:
+          - Linux
+          - Kubernetes
+          - Jenkins
+          - Java/Groovy
+          - Rundeck
+          - ArgoCD
+          - TektonCD
+      - description: Coaching of developers on Production Deployment workflows
+        environment:
+          - Windows
+          - Linux
+          - Java/Groovy
+          - SpringBoot
+      - description: Development/Pre-Production/Production infrastructure management
+        environment:
+          - Kubernetes
+          - ELK
+          - TICK
+          - SpringBoot
+          - PostgreSQL
+      - description: Micro Service infrastructure management (secret management, CI/CD, ...)
+        environment:
+          - Linux
+          - Kubernetes
+          - Jenkins
+          - Ansible
+          - ELK
+          - TICK
+  - id: goveni
+    category: Backend
+    startDate: December 2021
+    endDate: March 2023
+    company: Goveni
+    title: Freelance Backend engineer
+    context: Financica accounting application
+    missions:
+      - description: Python Backend development
+        environment:
+          - Python
+          - Django
+          - PostgreSQL
+      - description: Frontend development
+        environment:
+          - TypeScript
+          - React
+      - description: AWS infrastructure management with Terraform
+        environment:
+          - AWS (EC2, RDS, VPC, S3)
+          - Terraform
+          - Docker
+  - id: european-commission
+    category: DevOps
+    startDate: April 2023
+    endDate: August 2026
+    company: European Commission
+    title: Freelance DevSecOps engineer
+    context: System administrator
+    missions:
+      - description: Development of features on Netbox plugins for Reverse Proxies and Docker orchestration
+        environment:
+          - Python
+          - Netbox
+      - description: Development of a Netbox Webhook handler to automate live configuration updates on
+          Reverse Proxies
+        environment:
+          - Python
+          - Netbox
+          - Traefik
+          - Apache2
+          - ModSecurity Web Application Firewall
+          - NGINX
+      - description: Development of Ansible roles and playbooks to orchestrate Docker-based services via
+          Netbox and AWX
+        environment:
+          - Python
+          - Ansible
+          - AWX
+          - Netbox
+          - Docker
+      - description: Development of Gitlab CI/CD pipelines to build, test and release Python projects,
+          Docker images, and Ansible collections
+        environment:
+          - Gitlab CI
+          - Python
+          - Docker
+          - Ansible
+      - description: Design of Reverse Proxy and Web Application Firewall configuration to match business
+          requirements and security best practices
+        environment:
+          - Traefik
+          - Apache2
+          - ModSecurity Web Application Firewall
+          - NGINX
+      - description: Design of Reverse Proxy architecture (with WAF, custom middlewares, automated TLS
+          certificate management, rate limiting, caching, ...) based on Netbox
+        environment:
+          - Netbox
+          - Traefik
+          - Apache2
+          - ModSecurity Web Application Firewall
+          - NGINX
+      - description: Implementation of Prometheus Exporter and Healthcheck endpoints to match monitoring
+          requirements
+        environment:
+          - Python
+          - Prometheus
+          - Grafana
+          - AlertManager
+          - SNMP
+          - Blackbox
+      - description: Writing Technical Documentation for code and architecture
+        environment:
+          - Ansible
+          - AWX
+          - AWS (EC2, VPC, ...)
+          - Docker
+          - Gitlab
+          - Netbox
+      - description: Writing User Guides and Troubleshooting guides for knowledge transfer within the team
+        environment:
+          - Kubernetes
+          - Ansible
+          - AWX
+          - Netbox
+      - description: Writing Standard Operating Procedures for system administration tasks and incident response
+        environment:
+          - Ansible
+          - AWX
+          - Netbox
+  - id: link-society
+    category: null
+    startDate: July 2017
+    endDate: On going
+    company: Link Society
+    title: CEO & Co-Founder
+    context: Software Editor
+    missions:
+      - description: "Development of a Patient Follow-Up software for Radiology departments: SPRadio"
+        environment:
+          - Python
+          - Django
+          - Typescript
+          - VueJS
+      - description: Development of a mobile application for the organization 3-6-9-12
+        environment:
+          - Typescript
+          - VueJS
+      - description: "Development of a Continuous Integration and Deployment platform: Datapio"
+        environment:
+          - Linux
+          - Kubernetes
+          - TektonCD
+          - Elixir
+          - RabbitMQ
+      - description: "Development of a Dockerized Supervision engine: Kubirds"
+        environment:
+          - Linux
+          - Kubernetes
+          - TektonCD
+          - Elixir
+          - Go
+      - description: Teaching courses (with ESTIAM and/or SUPINFO)
+        environment:
+          - Windows
+          - Linux
+          - Python
+          - C
+          - Go
+      - description: Marketing strategy & Business Development
+        environment: []
+      - description: Development of a Kubernetes as a Service platform based on k0s
+        environment:
+          - Linux
+          - Kubernetes
+          - k0s
+          - Netbox
+          - Python
+      - description: "Development of an OpenSource Log Processing software: FlowG"
+        environment:
+          - Linux
+          - Kubernetes
+          - Go
+          - Rust
+          - MCP
+      - description: Development of a SaaS offering for FlowG based on Netbox and the Netbox Docker Plugin
+        environment:
+          - Linux
+          - Kubernetes
+          - Go
+          - Rust
+          - MCP
+          - Netbox
+          - Docker
+      - description: "Development of an LLM-based document indexing software: LLamapedia"
+        environment:
+          - Linux
+          - Python
+          - LLMs
+          - MCP

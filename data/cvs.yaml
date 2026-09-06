@@ -1,0 +1,48 @@
+- id: devops
+  title: DevOps Engineer
+  summary: >-
+    I build and operate cloud infrastructure, automate deployments and help teams
+    manage their platforms. I use Terraform, Ansible, Docker and Kubernetes to turn
+    infrastructure requirements into repeatable workflows. My work spans the European
+    Commission, Decathlon and Link Society, where I deploy our infrastructure on
+    DigitalOcean with Terraform, including Cloudflare DNS. I also work on observability,
+    networking and CI/CD, combining platform engineering with hands-on software development.
+  experienceIds: [european-commission, proxiad-decathlon, proxiad-it-ce, capensis, link-society]
+  skillCategoryIds: [iac, cloud, containers, cicd, monitoring, network]
+  projectNames: [FlowG, krouter, Kubirds, Datapio]
+- id: backend
+  title: Backend Engineer
+  summary: >-
+    I develop backend services, APIs and data-processing tools, using Python daily
+    alongside Go, Elixir and Rust. I work with Django, relational databases and messaging
+    systems to connect applications and support their operational needs. My experience
+    includes accounting software, synchronisation services and open-source platforms
+    such as FlowG. I take projects from implementation through deployment, and I build
+    smaller command-line tools to solve practical development and infrastructure problems.
+  experienceIds: [goveni, scille, elonet, capensis, link-society]
+  skillCategoryIds: [backend, databases, messaging, languages-distributed]
+  projectNames: [FlowG, procfusion, gotempl, Letlang]
+- id: fullstack
+  title: Fullstack Developer
+  summary: >-
+    I build web applications across the backend, frontend and deployment infrastructure.
+    I combine Python and Django with JavaScript interfaces, drawing on work with React,
+    Vue and Ember.js. My projects include accounting applications, collaborative tools
+    and monitoring software. I connect user-facing features to APIs and databases,
+    and I automate their deployment. Through Link Society and my personal projects,
+    I stay involved in both product development and the day-to-day operation of applications.
+  experienceIds: [goveni, capensis, 9h37, link-society]
+  skillCategoryIds: [backend, frontend, databases, languages-web]
+  projectNames: [FlowG, Kubirds, Datapio]
+- id: teaching
+  title: Technical Trainer
+  summary: >-
+    I teach programming and share practical software development and infrastructure
+    knowledge. I have delivered courses at SUPINFO and ESTIAM, covering topics such
+    as C, Python, JavaScript, Linux and networking. I draw on my development and DevOps
+    work to connect concepts to concrete examples. I also write technical documentation
+    and support knowledge transfer within teams, helping developers understand the
+    tools they use and become more independent in their work.
+  experienceIds: [estiam, supinfo, capensis, proxiad-decathlon, link-society]
+  skillCategoryIds: [languages-systems, languages-web, languages-automation, analytics, hardware]
+  projectNames: [Letlang]

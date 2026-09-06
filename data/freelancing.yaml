@@ -1,0 +1,17 @@
+email: david.jose.delassus@gmail.com
+dailyRate: 600€
+remoteOnly: true
+services:
+  - title: DevOps & Platform Engineering
+    description: CI/CD pipelines, Kubernetes clusters, Infrastructure as Code (Ansible, Terraform) and
+      cloud infrastructure management (AWS, GCP, Azure).
+  - title: Monitoring & Observability
+    description: Supervision platforms, Prometheus exporters, alerting and log processing pipelines.
+  - title: Backend Development
+    description: APIs, data processing and integrations in Python, Go, Elixir or Rust, backed by
+      PostgreSQL or MongoDB.
+  - title: Technical Documentation & Training
+    description: Architecture documentation, Standard Operating Procedures, knowledge transfer and
+      developer coaching.
+  - title: Audits & Technical Reviews
+    description: Code reviews, architecture audits, security audits and technical due diligence.

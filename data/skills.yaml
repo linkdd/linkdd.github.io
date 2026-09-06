@@ -1,0 +1,334 @@
+- id: devops
+  label: DevOps
+  children:
+    - id: iac
+      label: Infrastructure as Code
+      technologies:
+        - name: Ansible
+          description: Used for Canopsis deployment, IT-CE automation and European Commission orchestration.
+          source: https://github.com/linkdd/linkdd.github.io/blob/main/data/jobs.yaml
+        - name: Terraform
+          description: Deploys all Link Society infrastructure, including Cloudflare DNS; also used for AWS at
+            Goveni.
+          source: Personal experience, confirmed by David Delassus
+    - id: cloud
+      label: Cloud Architecture
+      technologies:
+        - name: GCP
+          description: Used at Decathlon and Link Society.
+          source: Personal experience, confirmed by David Delassus
+        - name: AWS
+          description: Used at the European Commission, Decathlon, Link Society and Goveni.
+          source: Personal experience, confirmed by David Delassus
+        - name: Azure
+          description: Used at Decathlon and Link Society.
+          source: Personal experience, confirmed by David Delassus
+        - name: DigitalOcean
+          description: Hosts all Link Society infrastructure and some of my personal projects.
+          source: Personal experience, confirmed by David Delassus
+        - name: OVH
+          description: Used for personal projects.
+          source: Personal experience, confirmed by David Delassus
+    - id: containers
+      label: Containers & Orchestration
+      technologies:
+        - name: Kubernetes
+          description: Used extensively across my professional work and personal projects.
+          source: Personal experience, confirmed by David Delassus
+        - name: Rancher
+          description: Used for pre-production application delivery at Decathlon.
+          source: https://github.com/linkdd/linkdd.github.io/blob/main/data/jobs.yaml
+        - name: Docker
+          description: Used extensively across my professional work and personal projects.
+          source: Personal experience, confirmed by David Delassus
+    - id: cicd
+      label: Continuous Integration & Deployment
+      technologies:
+        - name: Jenkins
+          description: Used to automate integration and deployment workflows at Decathlon.
+          source: https://github.com/linkdd/linkdd.github.io/blob/main/data/jobs.yaml
+        - name: Rundeck
+          description: Used to automate integration and deployment workflows at Decathlon.
+          source: https://github.com/linkdd/linkdd.github.io/blob/main/data/jobs.yaml
+        - name: ArgoCD
+          description: Used to automate integration and deployment workflows at Decathlon.
+          source: https://github.com/linkdd/linkdd.github.io/blob/main/data/jobs.yaml
+        - name: TektonCD
+          description: Used at Decathlon and for Datapio and Kubirds at Link Society.
+          source: https://github.com/linkdd/linkdd.github.io/blob/main/data/jobs.yaml
+        - name: Github Actions
+          description: Used for Link Society projects and my personal projects.
+          source: Personal experience, confirmed by David Delassus
+        - name: Gitlab CI
+          description: Built Python, Docker and Ansible build/test/release pipelines at the European Commission.
+          source: https://github.com/linkdd/linkdd.github.io/blob/main/data/jobs.yaml
+    - id: monitoring
+      label: Supervision & Monitoring
+      technologies:
+        - name: Nagios
+          description: Used for Canopsis at Capensis.
+          source: Personal experience, confirmed by David Delassus
+        - name: Shinken
+          description: Used for Canopsis at Capensis.
+          source: Personal experience, confirmed by David Delassus
+        - name: Centreon
+          description: Used for Canopsis at Capensis.
+          source: Personal experience, confirmed by David Delassus
+        - name: Icinga
+          description: Used for Canopsis at Capensis.
+          source: Personal experience, confirmed by David Delassus
+        - name: Zabbix
+          description: Used for Canopsis at Capensis.
+          source: Personal experience, confirmed by David Delassus
+        - name: Prometheus
+          description: Built exporters and health checks for monitoring at the European Commission.
+          source: https://github.com/linkdd/linkdd.github.io/blob/main/data/jobs.yaml
+        - name: FlowG
+          description: Developed the log-processing software and its SaaS offering at Link Society.
+          source: https://github.com/linkdd/linkdd.github.io/blob/main/data/jobs.yaml
+        - name: Splunk
+          description: Used at the European Commission and while working on FlowG.
+          source: Personal experience, confirmed by David Delassus
+        - name: Datadog
+          description: Used while working on FlowG.
+          source: Personal experience, confirmed by David Delassus
+    - id: network
+      label: Networking & High Availability
+      technologies:
+        - name: NetBox
+          description: Built plugins and webhook automation at the European Commission and Link Society.
+          source: https://github.com/linkdd/linkdd.github.io/blob/main/data/jobs.yaml
+        - name: Apache2
+          description: Used for CPS authentication at 9h37 and reverse proxies at the European Commission.
+          source: https://github.com/linkdd/linkdd.github.io/blob/main/data/jobs.yaml
+        - name: Nginx (& Nginx Plus)
+          description: Used NGINX in reverse-proxy and WAF architecture at the European Commission.
+          source: https://github.com/linkdd/linkdd.github.io/blob/main/data/jobs.yaml
+        - name: Caddy
+          description: Used as a reverse proxy at Goveni.
+          source: Personal experience, confirmed by David Delassus
+        - name: HAProxy
+          description: Used for Canopsis high availability at Capensis and at the European Commission.
+          source: Personal experience, confirmed by David Delassus
+        - name: Traefik
+          description: Designed reverse-proxy configuration and automation at the European Commission.
+          source: https://github.com/linkdd/linkdd.github.io/blob/main/data/jobs.yaml
+        - name: Keepalived
+          description: Implemented high availability for Canopsis at Capensis.
+          source: https://github.com/linkdd/linkdd.github.io/blob/main/data/jobs.yaml
+        - name: MetalLB
+          description: Used for personal experiments with Kubernetes.
+          source: Personal experience, confirmed by David Delassus
+        - name: OpenLDAP
+          description: Used at Capensis and in earlier Link Society infrastructure.
+          source: Personal experience, confirmed by David Delassus
+    - id: virtualization
+      label: Virtualization
+      technologies:
+        - name: VirtualBox
+          description: Used for personal virtualization experiments.
+          source: Personal experience, confirmed by David Delassus
+        - name: libvirt
+          description: Used for personal virtualization experiments.
+          source: Personal experience, confirmed by David Delassus
+        - name: Xen
+          description: Used for personal virtualization experiments.
+          source: Personal experience, confirmed by David Delassus
+        - name: VMWare
+          description: Used during Canopsis deployment and application management for RATP at Capensis.
+          source: https://github.com/linkdd/linkdd.github.io/blob/main/data/jobs.yaml
+        - name: QEMU
+          description: Used for hobby operating-system development.
+          source: Personal experience, confirmed by David Delassus
+    - id: os
+      label: Operating Systems
+      technologies:
+        - name: Windows
+          description: Used for Python/R deployment at IT-CE and programming courses at SUPINFO.
+          source: https://github.com/linkdd/linkdd.github.io/blob/main/data/jobs.yaml
+        - name: Linux
+          description: Used throughout system administration work at Capensis, Decathlon and Link Society.
+          source: https://github.com/linkdd/linkdd.github.io/blob/main/data/jobs.yaml
+        - name: BSD
+          description: Previously used as a desktop operating system and in my homelab.
+          source: Personal experience, confirmed by David Delassus
+- id: development
+  label: Software Development
+  children:
+    - id: backend
+      label: Backend
+      technologies:
+        - name: Django
+          description: Used for FlowG SaaS, SPRadio, Goveni, 9h37 and many personal projects.
+          source: Personal experience, confirmed by David Delassus
+        - name: Flask
+          description: Used for Parsec at Scille and many personal projects.
+          source: Personal experience, confirmed by David Delassus
+        - name: ExpressJS
+          description: Used for personal projects and Function as a Service microservices.
+          source: Personal experience, confirmed by David Delassus
+        - name: Socket.IO
+          description: Used for personal projects and Function as a Service microservices.
+          source: Personal experience, confirmed by David Delassus
+        - name: Phoenix
+          description: Used for Kubirds at Link Society.
+          source: Personal experience, confirmed by David Delassus
+    - id: frontend
+      label: Frontend
+      technologies:
+        - name: VueJS
+          description: Used for SPRadio and the 3-6-9-12 mobile application at Link Society.
+          source: https://github.com/linkdd/linkdd.github.io/blob/main/data/jobs.yaml
+        - name: React
+          description: Used for frontend development on Goveni’s Financica application.
+          source: https://github.com/linkdd/linkdd.github.io/blob/main/data/jobs.yaml
+        - name: EmberJS
+          description: Developed Canopsis Web UI widgets at Capensis.
+          source: https://github.com/linkdd/linkdd.github.io/blob/main/data/jobs.yaml
+        - name: jQuery
+          description: Used in many personal projects.
+          source: Personal experience, confirmed by David Delassus
+        - name: ExtJS
+          description: Used for Canopsis at Capensis before its migration to EmberJS.
+          source: Personal experience, confirmed by David Delassus
+    - id: languages
+      label: Programming Languages
+      children:
+        - id: languages-systems
+          label: Systems & OS Development
+          technologies:
+            - name: C
+              description: Used for hobby OS and game development; also taught at SUPINFO and ESTIAM.
+              source: Personal experience, confirmed by David Delassus
+            - name: C++
+              description: Used for hobby OS and game development, including my aitoolkit game AI library.
+              source: Personal experience, confirmed by David Delassus
+            - name: Rust
+              description: Used for Letlang, tricorder and procfusion, which runs in production.
+              source: Personal experience, confirmed by David Delassus
+            - name: Assembly x86
+              description: Used for hobby operating-system development.
+              source: Personal experience, confirmed by David Delassus
+        - id: languages-web
+          label: Web Development
+          technologies:
+            - name: Python (2.7+, 3.4+)
+              description: Used routinely across my professional work and personal projects.
+              source: Personal experience, confirmed by David Delassus
+            - name: Javascript (ES5, ES6)
+              description: Used for Canopsis widgets at Capensis and taught advanced JavaScript at ESTIAM.
+              source: https://github.com/linkdd/linkdd.github.io/blob/main/data/jobs.yaml
+            - name: PHP (5, 7)
+              description: Used for Dolibarr plugins at ELONET and Symfony courses at ESTIAM.
+              source: https://github.com/linkdd/linkdd.github.io/blob/main/data/jobs.yaml
+            - name: Elixir
+              description: Used for the Datapio CI/CD platform and Kubirds supervision engine at Link Society.
+              source: https://github.com/linkdd/linkdd.github.io/blob/main/data/jobs.yaml
+            - name: Perl
+              description: Used when contributing to LemonLDAP::NG.
+              source: Personal experience, confirmed by David Delassus
+        - id: languages-games
+          label: Game Development
+          technologies:
+            - name: C
+              description: Used for hobby OS and game development; also taught at SUPINFO and ESTIAM.
+              source: Personal experience, confirmed by David Delassus
+            - name: C++
+              description: Used for hobby OS and game development, including my aitoolkit game AI library.
+              source: Personal experience, confirmed by David Delassus
+            - name: Lua
+              description: Used for game development.
+              source: Personal experience, confirmed by David Delassus
+        - id: languages-automation
+          label: Automation & CLI Tools
+          technologies:
+            - name: Shell Scripting
+              description: Used daily for DevOps work and everyday tasks.
+              source: Personal experience, confirmed by David Delassus
+            - name: Python (2.7+, 3.4+)
+              description: Used routinely across my professional work and personal projects.
+              source: Personal experience, confirmed by David Delassus
+            - name: Go
+              description: Used for FlowG, Kubirds and many small CLI tools.
+              source: Personal experience, confirmed by David Delassus
+            - name: Rust
+              description: Used for Letlang, tricorder and procfusion, which runs in production.
+              source: Personal experience, confirmed by David Delassus
+            - name: Java
+              description: Used Java/Groovy in CI/CD automation and developer coaching at Decathlon.
+              source: https://github.com/linkdd/linkdd.github.io/blob/main/data/jobs.yaml
+        - id: languages-distributed
+          label: Distributed Systems
+          technologies:
+            - name: Erlang
+              description: Used while working with RabbitMQ.
+              source: Personal experience, confirmed by David Delassus
+            - name: Elixir
+              description: Used for the Datapio CI/CD platform and Kubirds supervision engine at Link Society.
+              source: https://github.com/linkdd/linkdd.github.io/blob/main/data/jobs.yaml
+    - id: messaging
+      label: Messaging & Distributed Systems
+      technologies:
+        - name: RabbitMQ
+          description: Used for Canopsis processing engines at Capensis and Datapio at Link Society.
+          source: https://github.com/linkdd/linkdd.github.io/blob/main/data/jobs.yaml
+        - name: Kafka
+          description: Gained exposure through other teams using it at Decathlon.
+          source: Personal experience, confirmed by David Delassus
+- id: data
+  label: Data & Machine Learning
+  children:
+    - id: databases
+      label: Databases
+      technologies:
+        - name: PostgreSQL
+          description: Used for all my Django projects and for Parsec’s storage backend at Scille.
+          source: Personal experience, confirmed by David Delassus
+        - name: MySQL
+          description: Learned to keep my SQL portable across database engines.
+          source: Personal experience, confirmed by David Delassus
+        - name: MariaDB
+          description: Learned to keep my SQL portable across database engines.
+          source: Personal experience, confirmed by David Delassus
+        - name: MongoDB
+          description: Used for Canopsis processing at Capensis and data replication at Scille.
+          source: https://github.com/linkdd/linkdd.github.io/blob/main/data/jobs.yaml
+        - name: Riak
+          description: Used to develop a graph database for a universal CMDB at Capensis.
+          source: https://github.com/linkdd/linkdd.github.io/blob/main/data/jobs.yaml
+        - name: Redis
+          description: Frequently used with Django and in stacks such as NetBox.
+          source: Personal experience, confirmed by David Delassus
+    - id: analytics
+      label: Big Data & Machine Learning
+      technologies:
+        - name: ElasticSearch
+          description: Used for Decmon alerting at ELONET and ELK infrastructure at Decathlon.
+          source: https://github.com/linkdd/linkdd.github.io/blob/main/data/jobs.yaml
+        - name: SolR
+          description: Used in the SIAEF analytics environment at Scille.
+          source: https://github.com/linkdd/linkdd.github.io/blob/main/data/jobs.yaml
+        - name: Tensorflow
+          description: Used in data-visualization teaching at ESTIAM.
+          source: https://github.com/linkdd/linkdd.github.io/blob/main/data/jobs.yaml
+        - name: scikit-learn
+          description: Used alongside TensorFlow and for small machine-learning experiments.
+          source: Personal experience, confirmed by David Delassus
+        - name: IPython (Jupyter)
+          description: Used in data-visualization teaching at ESTIAM.
+          source: https://github.com/linkdd/linkdd.github.io/blob/main/data/jobs.yaml
+        - name: Talend
+          description: Taught data transformation and integration at ESTIAM.
+          source: https://github.com/linkdd/linkdd.github.io/blob/main/data/jobs.yaml
+- id: embedded
+  label: Embedded Systems
+  children:
+    - id: hardware
+      label: Hardware & Prototyping
+      technologies:
+        - name: Arduino
+          description: Taught C development for Arduino at ESTIAM.
+          source: https://github.com/linkdd/linkdd.github.io/blob/main/data/jobs.yaml
+        - name: Raspberry Pi
+          description: Used for home automation, my homelab and media center.
+          source: Personal experience, confirmed by David Delassus
