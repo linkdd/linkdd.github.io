@@ -38,6 +38,7 @@ export function windowReducer(
         ...state,
         {
           id: action.id,
+          taskbarOrder: Math.max(-1, ...state.map(item => item.taskbarOrder)) + 1,
           bounds: action.bounds,
           minimized: false,
           maximized: false,

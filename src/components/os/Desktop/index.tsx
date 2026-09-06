@@ -24,6 +24,7 @@ export default function Desktop({ apps, links, initialOpen = [] }: DesktopProps)
         ? [
             {
               id,
+              taskbarOrder: index,
               minimized: false,
               maximized: false,
               bounds: {
@@ -43,6 +44,10 @@ export default function Desktop({ apps, links, initialOpen = [] }: DesktopProps)
   )
 
   const activeId = visibleWindows.findLast(window => !window.minimized)?.id
+
+  const taskbarApps = [...visibleWindows]
+    .sort((a, b) => a.taskbarOrder - b.taskbarOrder)
+    .map(window => apps.find(app => app.id === window.id)!)
 
   useEffect(() => {
     const observer = new ResizeObserver(entries => {
@@ -105,9 +110,7 @@ export default function Desktop({ apps, links, initialOpen = [] }: DesktopProps)
 
       <Taskbar
         links={links}
-        openApps={visibleWindows.map(window =>
-          apps.find(app => app.id === window.id)!,
-        )}
+        openApps={taskbarApps}
         activeId={activeId}
         onSelect={selectWindow}
       />

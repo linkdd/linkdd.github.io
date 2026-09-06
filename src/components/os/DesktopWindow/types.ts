@@ -12,6 +12,7 @@ export type Bounds = {
 
 export type DesktopWindowState = {
   id: string
+  taskbarOrder: number
   bounds: Bounds
   minimized: boolean
   maximized: boolean
