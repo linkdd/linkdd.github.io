@@ -1,11 +1,9 @@
-import Button from '@/components/base/Button'
-
 import Clock from '@/components/os/Clock'
 import StartMenu from '@/components/os/StartMenu'
 
 import type { TaskbarProps } from './types'
 
-import { TaskbarLayout, Tasks } from './styled'
+import { TaskbarLayout, Tasks, TaskButton, TaskIcon, TaskLabel } from './styled'
 
 
 export default function Taskbar({
@@ -23,17 +21,18 @@ export default function Taskbar({
           const active = activeId === app.id
 
           return (
-            <Button
+            <TaskButton
               variant="default"
               key={app.id}
               data-task-app={app.id}
-              className={active ? 'active' : ''}
+              active={active}
               aria-pressed={active}
               title={app.title}
               onClick={() => onSelect(app.id)}
             >
-              <span aria-hidden="true">{app.icon}</span> {app.title}
-            </Button>
+              <TaskIcon aria-hidden="true">{app.icon}</TaskIcon>
+              <TaskLabel>{app.title}</TaskLabel>
+            </TaskButton>
           )
         })}
       </Tasks>
