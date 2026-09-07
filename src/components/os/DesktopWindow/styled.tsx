@@ -45,6 +45,15 @@ export const WindowFrame = styled.section`
     flex-shrink: 0;
     margin-right: 12px;
   }
+
+  &[data-resizable='false'] > .window > .status-bar {
+    margin-right: 0;
+  }
+
+  &[data-noborder='true'] > .window > .window-body {
+    margin: 0;
+    padding: 0;
+  }
 `
 
 export const ResizeHandle = styled(Button)`

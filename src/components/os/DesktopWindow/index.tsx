@@ -18,6 +18,8 @@ export default function DesktopWindow({
   area,
   dispatch,
 }: DesktopWindowProps) {
+  const resizable = app.resizable ?? true
+  const noborder = app.noborder ?? false
   const element = useRef<HTMLElement>(null)
   const outlineElement = useRef<HTMLDivElement>(null)
   const animations = useRef<Animation[]>([])
@@ -36,7 +38,11 @@ export default function DesktopWindow({
   const bounds = fitBounds(window.bounds, area.width, area.height)
 
   const focus = () => dispatch({ type: 'focus', id: app.id })
-  const maximize = () => dispatch({ type: 'maximize', id: app.id })
+  const maximize = () => {
+    if (resizable) {
+      dispatch({ type: 'maximize', id: app.id })
+    }
+  }
 
   useEffect(() => {
     if (active && !element.current?.contains(document.activeElement)) {
@@ -123,6 +129,7 @@ export default function DesktopWindow({
     if (
       event.button !== 0 ||
       window.maximized ||
+      (resize && !resizable) ||
       (!resize && (!target.closest('.title-bar') || target.closest('button')))
     ) {
       return
@@ -137,7 +144,7 @@ export default function DesktopWindow({
   function move(event: PointerEvent<HTMLElement>) {
     const current = gesture.current
 
-    if (!current) {
+    if (!current || (current.resize && !resizable)) {
       return
     }
 
@@ -178,6 +185,8 @@ export default function DesktopWindow({
         role="dialog"
         aria-label={app.title}
         data-minimized={window.minimized}
+        data-noborder={noborder}
+        data-resizable={resizable}
         inert={window.minimized}
         aria-hidden={window.minimized}
         tabIndex={-1}
@@ -217,9 +226,14 @@ export default function DesktopWindow({
           titlebar={{
             text: app.title,
             inactive: !active,
-            maximized: window.maximized,
-            onMaximize: maximize,
-            onRestore: maximize,
+            ...(resizable ? {
+              maximizable: true,
+              maximized: window.maximized,
+              onMaximize: maximize,
+              onRestore: maximize,
+            } : {
+              maximizable: false,
+            }),
             onMinimize: () => dispatch({ type: 'minimize', id: app.id }),
             onClose: () => dispatch({ type: 'close', id: app.id }),
           }}
@@ -228,7 +242,7 @@ export default function DesktopWindow({
           {app.content}
         </Window>
 
-        {!window.maximized && (
+        {resizable && !window.maximized && (
           <ResizeHandle
             variant="flat"
             data-resize-handle

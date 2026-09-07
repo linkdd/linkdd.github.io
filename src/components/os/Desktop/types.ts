@@ -8,6 +8,8 @@ export type DesktopApp = {
   icon: ReactNode
   content: ReactNode
   initialSize?: { width: number; height: number }
+  resizable?: boolean
+  noborder?: boolean
   statusbar?: string[]
 }
 

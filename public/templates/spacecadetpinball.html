@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      html, body {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background: black;
+        width: 100%;
+        height: 100%;
+      }
+
+      canvas {
+        display: block;
+        border: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <canvas id="canvas" tabindex="0" aria-label="Space Cadet Pinball game"></canvas>
+
+    <script>
+      const canvas = document.getElementById('canvas')
+      const focusGame = () => canvas.focus({ preventScroll: true })
+
+      canvas.addEventListener('pointerdown', focusGame)
+      window.addEventListener('focus', focusGame)
+      canvas.addEventListener('contextmenu', event => event.preventDefault())
+
+      // Keep native keyboard events flowing to SDL while suppressing browser
+      // shortcuts and scrolling. Tab remains available to leave the game.
+      for (const type of ['keydown', 'keyup', 'keypress']) {
+        window.addEventListener(type, event => {
+          if (event.key !== 'Tab') {
+            event.preventDefault()
+          }
+        }, { capture: true })
+      }
+
+      window.Module = {
+        canvas,
+        onRuntimeInitialized: function() {
+          if (document.hasFocus()) {
+            focusGame()
+          }
+        },
+        locateFile: function(path) {
+          return `https://pinball.alula.me/${path}`
+        },
+        print: console.log,
+        printErr: console.error,
+        setStatus: function() {},
+      }
+    </script>
+    <script src="https://pinball.alula.me/SpaceCadetPinball.js"></script>
+  </body>
+</html>
