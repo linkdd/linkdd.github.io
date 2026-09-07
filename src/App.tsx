@@ -8,6 +8,7 @@ import Skills from '@/apps/Skills'
 import Projects from '@/apps/Projects'
 import Blog from '@/apps/Blog'
 import CVs from '@/apps/CVs'
+import Meeting from '@/apps/Meeting'
 
 import GithubLogo from '@/assets/logos/github.ico'
 import LinkedinLogo from '@/assets/logos/linkedin.ico'
@@ -23,6 +24,7 @@ const apps: DesktopApp[] = [
   Projects,
   Blog,
   CVs,
+  Meeting,
 ]
 
 

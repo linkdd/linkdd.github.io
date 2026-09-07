@@ -28,7 +28,7 @@ export default function Desktop({ apps, links, initialOpen = [] }: DesktopProps)
               minimized: false,
               maximized: false,
               bounds: {
-                x: 120 + index * 24,
+                x: 240 + index * 24,
                 y: 40 + index * 24,
                 width: app.initialSize?.width ?? 480,
                 height: app.initialSize?.height ?? 320,
