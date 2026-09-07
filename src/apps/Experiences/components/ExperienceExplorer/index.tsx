@@ -10,7 +10,7 @@ import FolderUrl from '@/assets/icons/directory.png'
 import DocumentUrl from '@/assets/icons/document.png'
 
 import { experienceCategories, experiences } from '@/apps/Experiences/data'
-import type { ExperienceCategory, ExperienceEntry } from '@/apps/Experiences/data'
+import type { ExperienceCategory, ExperienceEntry } from '@/apps/Experiences/types'
 
 import type { ExperienceExplorerProps } from './types'
 

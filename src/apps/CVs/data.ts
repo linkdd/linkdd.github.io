@@ -2,15 +2,8 @@ import { parse } from 'yaml'
 
 import source from '/data/cvs.yaml?raw'
 
+import type { CVDefinition } from './types'
 
-export type CVDefinition = {
-  id: string
-  title: string
-  summary: string
-  experienceIds: string[]
-  skillCategoryIds: string[]
-  projectNames: string[]
-}
 
 const definitions: CVDefinition[] = parse(source)
 

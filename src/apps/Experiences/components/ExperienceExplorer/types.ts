@@ -1,4 +1,4 @@
-import type { ExperienceEntry } from '@/apps/Experiences/data'
+import type { ExperienceEntry } from '@/apps/Experiences/types'
 
 
 export type ExperienceExplorerProps = {
