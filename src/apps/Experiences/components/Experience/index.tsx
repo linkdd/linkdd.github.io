@@ -1,4 +1,6 @@
-import { JobHeader, JobDates, JobDescription, JobMission } from './styled'
+import Markdown from 'react-markdown'
+
+import { JobHeader, JobDates, JobDescription, JobAbstract, JobMission } from './styled'
 import type { ExperienceProps } from './types'
 
 
@@ -16,9 +18,19 @@ export default function Experience(props: ExperienceProps) {
         </JobDescription>
       </JobHeader>
 
+      {props.abstract ? (
+        <JobAbstract className="field-border">
+          <Markdown>{props.abstract}</Markdown>
+        </JobAbstract>
+      ) : (
+        <></>
+      )}
+
       {props.missions.map((mission, index) => (
         <JobMission key={index}>
-          {mission.description}
+          <Markdown components={{ p: ({ children }) => <>{children}</> }}>
+            {mission.description}
+          </Markdown>
 
           {mission.environment.length > 0 && (
             <>

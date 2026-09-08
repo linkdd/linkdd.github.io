@@ -33,6 +33,12 @@ export const JobDescription = styled.div`
   gap: 0.25rem;
 `
 
+export const JobAbstract = styled.div`
+  margin-top: 0.5rem;
+  padding-left: 8px;
+  padding-right: 8px;
+`
+
 export const JobMission = styled(GroupBox)`
   margin-top: 0.5rem;
   padding: 0.5rem;

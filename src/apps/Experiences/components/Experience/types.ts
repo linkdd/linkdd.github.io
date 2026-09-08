@@ -9,5 +9,6 @@ export type ExperienceProps = {
   company: string
   title: string
   context: string
+  abstract?: string
   missions: Mission[]
 }

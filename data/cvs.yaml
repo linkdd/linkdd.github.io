@@ -1,58 +1,51 @@
 - id: general
   title: Senior Engineer
   summary: >-
-    I build web applications, backend services and cloud infrastructure, taking projects
-    from implementation through deployment and day-to-day operation. I connect
-    applications through APIs and messaging systems, develop data-processing tools,
-    and automate infrastructure and delivery workflows. My experience covers business
-    applications, synchronisation services and monitoring platforms. I also provide
-    technical training and documentation to help teams maintain their systems and
-    work independently.
+    I develop software and the infrastructure it runs on, from web interfaces and backend services
+    to cloud platforms. I connect applications, automate manual workflows and make deployments
+    repeatable. I can work across application code and operations to resolve integration and
+    configuration problems, and provide the documentation and training teams need to maintain their
+    systems.
 - id: devops
   title: DevOps Engineer
   summary: >-
-    I build and operate cloud infrastructure, automate deployments and help teams
-    manage their platforms. I use Terraform, Ansible, Docker and Kubernetes to turn
-    infrastructure requirements into repeatable workflows. My work spans the European
-    Commission, Decathlon and Link Society, where I deploy our infrastructure on
-    DigitalOcean with Terraform, including Cloudflare DNS. I also work on observability,
-    networking and CI/CD, combining platform engineering with hands-on software development.
+    I help teams deploy and operate applications with less manual work and greater control over
+    changes. I design cloud infrastructure, automate configuration and build delivery workflows that
+    support testing, releases and rollbacks. I work with Terraform, Ansible, Docker and Kubernetes,
+    and address networking, monitoring and security requirements so teams can diagnose problems and
+    manage their platforms.
   experienceIds: [european-commission, proxiad-decathlon, proxiad-it-ce, capensis, link-society]
   skillCategoryIds: [iac, cloud, containers, cicd, monitoring, network]
   projectNames: [FlowG, krouter, Kubirds, Datapio]
 - id: backend
   title: Backend Engineer
   summary: >-
-    I develop backend services, APIs and data-processing tools, using Python daily
-    alongside Go, Elixir and Rust. I work with Django, relational databases and messaging
-    systems to connect applications and support their operational needs. My experience
-    includes accounting software, synchronisation services and open-source platforms
-    such as FlowG. I take projects from implementation through deployment, and I build
-    smaller command-line tools to solve practical development and infrastructure problems.
+    I build backend services, APIs and data-processing tools that connect applications and keep
+    information moving between systems. I work with Python, Go, Elixir and Rust, alongside
+    relational databases and messaging systems. I can implement business logic, synchronise data and
+    extend existing services, with testing and deployment built into the work.
   experienceIds: [goveni, scille, elonet, capensis, link-society]
   skillCategoryIds: [backend, databases, messaging, languages-distributed]
   projectNames: [FlowG, procfusion, gotempl, Letlang]
 - id: fullstack
   title: Fullstack Developer
   summary: >-
-    I build web applications across the backend, frontend and deployment infrastructure.
-    I combine Python and Django with JavaScript interfaces, drawing on work with React,
-    Vue and Ember.js. My projects include accounting applications, collaborative tools
-    and monitoring software. I connect user-facing features to APIs and databases,
-    and I automate their deployment. Through Link Society and my personal projects,
-    I stay involved in both product development and the day-to-day operation of applications.
+    I turn business requirements into web applications, connecting user interfaces to backend logic,
+    APIs and databases. I work with Python and Django alongside JavaScript and TypeScript
+    frameworks, and can handle the infrastructure and deployment work needed to run the application.
+    I develop new features, integrate existing systems and automate workflows that would otherwise
+    require manual work.
   experienceIds: [goveni, capensis, 9h37, link-society]
   skillCategoryIds: [backend, frontend, databases, languages-web]
   projectNames: [FlowG, Kubirds, Datapio]
 - id: teaching
   title: Technical Trainer
   summary: >-
-    I teach programming and share practical software development and infrastructure
-    knowledge. I have delivered courses at SUPINFO and ESTIAM, covering topics such
-    as C, Python, JavaScript, Linux and networking. I draw on my development and DevOps
-    work to connect concepts to concrete examples. I also write technical documentation
-    and support knowledge transfer within teams, helping developers understand the
-    tools they use and become more independent in their work.
+    I help students and development teams understand the tools they use and become more independent
+    in their work. I teach programming, web development, Linux administration, networking and data
+    tools, adapting the depth to the audience. I connect technical concepts to practical development
+    and operations problems, and write guides that help teams deploy, maintain and troubleshoot
+    their systems.
   experienceIds: [estiam, supinfo, capensis, proxiad-decathlon, link-society]
   skillCategoryIds: [languages-systems, languages-web, languages-automation, analytics, hardware]
   projectNames: [Letlang]

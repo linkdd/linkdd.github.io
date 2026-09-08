@@ -11,6 +11,7 @@ entries:
     company: 9h37 SAS
     title: Python Software Developer
     context: Internship at the software development division
+    abstract: Worked in a **team of 5** at a startup that was subsequently acquired.
     missions:
       - description: Development of internal tooling for sales and IT teams
         environment:
@@ -32,6 +33,9 @@ entries:
     company: Capensis
     title: Python Software Developer / System Administrator / Trainer
     context: "Development of an Open Source hypervisor: Canopsis"
+    abstract: Part of a **team of 4** that successfully deployed Canopsis to clients including **RATP,
+      La Poste, Eiffage, Orange and DCNS (now Naval Group)**. Fully automated deployment, testing
+      and validation procedures, reducing on-site interventions from **2 weeks to 2 days**.
     missions:
       - description: Development of data collectors for *Canopsis*
         environment:
@@ -83,6 +87,7 @@ entries:
     company: SUPINFO
     title: Freelance Teacher
     context: First-year university courses
+    abstract: Taught C and Python to classes averaging **30 students**.
     missions:
       - description: C & Python training with classrooms of 30 students on average
         environment:
@@ -118,6 +123,7 @@ entries:
     company: ESTIAM
     title: Freelance Teacher
     context: 4th and 5th year university courses
+    abstract: Taught classes of **15 students**, with **all students passing every subject taught**.
     missions:
       - description: C Development for Arduino
         environment:
@@ -156,6 +162,10 @@ entries:
     title: Freelance Python Developer
     context: Feature development for the projects of the software editor Scille with the *Ministère de
       l'intérieur* and the *Ministère de la défense*
+    abstract: Refactored the SIAEF test suite to provide **clear test reports**, improving the team's
+      development velocity. Built **MongoDB-to-PostgreSQL replication** so the analytics team could
+      work with the project's data using familiar SQL tools and integrate it with their existing
+      BI tooling.
     missions:
       - description: Implementation of replication between MongoDB and PostgreSQL for the Analytics team of
           the *SIAEF* project at the **DGEF**
@@ -189,6 +199,9 @@ entries:
     company: PROXIAD
     title: Freelance Python Developer / System Administrator
     context: Feature Development for Big Data projects at IT-CE
+    abstract: Implemented CI/CD that **significantly reduced deployment problems** for data scientists
+      and data engineers, allowing them to focus on their work with greater confidence that changes
+      would not disrupt production.
     missions:
       - description: Implementation of an automated deployment solution of Python/R environments on an
           Hadoop/Spark based infrastructure
@@ -210,6 +223,10 @@ entries:
     company: PROXIAD
     title: Freelance DevOps Engineer
     context: DevOps engineer for the Retail teams at Decathlon
+    abstract: Within a **team of 4**, modernised the legacy automation pipeline so all teams could
+      safely submit and roll back pull requests. Migrated the team’s **5 microservices** to
+      Kubernetes within an application used by **1,200 stores worldwide**, with geographic clusters
+      on GCP and Azure for China.
     missions:
       - description: Weekly delivery of internal applications in Pre-Production environments
         environment:
@@ -254,6 +271,8 @@ entries:
     company: Goveni
     title: Freelance Backend engineer
     context: Financica accounting application
+    abstract: Automated **application and infrastructure deployments** as part of the development
+      team, enabling us to **safely ship features to production** for early adopters.
     missions:
       - description: Python Backend development
         environment:
@@ -276,6 +295,9 @@ entries:
     company: European Commission
     title: Freelance DevSecOps engineer
     context: System administrator
+    abstract: Within a **team of 4**, designed AWS infrastructure and reduced configuration change
+      deployment time from **45 minutes to 5 minutes**, enabling the team to then roll out the
+      infrastructure across **nearly 40 clusters**.
     missions:
       - description: Development of features on Netbox plugins for Reverse Proxies and Docker orchestration
         environment:
@@ -355,6 +377,12 @@ entries:
     company: Link Society
     title: CEO & Co-Founder
     context: Software Editor
+    abstract: Primarily the business through which I provide freelance services, Link Society also
+      develops software and funds open-source work, supporting **2 part-time freelancers** on FlowG
+      and related projects. FlowG is used by **3 companies**; its SaaS offering is in development,
+      and LLamapedia is at an early stage, not yet an MVP. We also hire students for
+      work-study placements (alternance), teaching practical engineering skills through real
+      projects to prepare them for professional work.
     missions:
       - description: "Development of a Patient Follow-Up software for Radiology departments: SPRadio"
         environment:

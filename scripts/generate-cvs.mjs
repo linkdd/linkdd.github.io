@@ -108,10 +108,10 @@ for (const cv of cvs) {
 
   doc.addStructure(structure)
 
-  function measure(value, size = 10, bold = false) {
-    doc.font(bold ? 'Bold' : 'Body').fontSize(size)
+  function measure(value, size = 10, bold = false, textWidth = width) {
+    doc.font(bold || value.includes('**') ? 'Bold' : 'Body').fontSize(size)
 
-    return doc.heightOfString(plain(value), { width, lineGap: 0.5 })
+    return doc.heightOfString(plain(value), { width: textWidth, lineGap: 0.5 })
   }
 
   function reserve(height) {
@@ -121,20 +121,35 @@ for (const cv of cvs) {
   }
 
   function text(value, size = 10, bold = false, tag = 'P', options = {}) {
-    const content = plain(value)
+    const { x = 40, ...layout } = options
 
-    reserve(measure(content, size, bold))
+    reserve(measure(value, size, bold, layout.width ?? width))
 
     const color = options.color ?? (tag.startsWith('H') ? '#164E63' : '#222222')
 
-    doc.font(bold ? 'Bold' : 'Body').fontSize(size).fillColor(color)
-    doc.text(content + ' ', 40, doc.y, {
+    const segments = value.trim().split(/(\*\*[^*]+\*\*)/g).filter(Boolean)
+    const textOptions = {
       width,
       lineGap: 0.5,
       structParent: structure,
       structType: tag,
-      ...options,
-    })
+      ...layout,
+    }
+
+    for (const [index, segment] of segments.entries()) {
+      const last = index === segments.length - 1
+      const content = segment.replace(/\[([^\]]+)\]\(([^)]+)\)/g, '$1 ($2)').replace(/\*+/g, '')
+
+      doc.font(bold || segment.startsWith('**') ? 'Bold' : 'Body').fontSize(size).fillColor(color)
+
+      const runOptions = { ...textOptions, continued: !last }
+
+      if (index === 0) {
+        doc.text(content + (last ? ' ' : ''), x, doc.y, runOptions)
+      } else {
+        doc.text(content + (last ? ' ' : ''), runOptions)
+      }
+    }
   }
 
   function section(title, followingHeight = 40) {
@@ -244,34 +259,125 @@ for (const cv of cvs) {
     const company = `${job.company}${job.documentName ? ` / ${job.documentName}` : ''}`
     const dates = `${job.startDate} - ${/on ?going/i.test(job.endDate) ? 'Present' : job.endDate}`
     const firstMission = job.missions[0]?.description ?? ''
+    const headerPadding = 10
+    const headerWidth = width - headerPadding * 2
+    const columnGap = 20
+    const titleWidth = (headerWidth - columnGap) * 0.58
+    const contextWidth = headerWidth - columnGap - titleWidth
+    const headerHeight = Math.max(
+      measure(job.title, 11, true, titleWidth) + measure(dates, 10, false, titleWidth),
+      measure(job.context, 10, false, contextWidth),
+    )
+    const abstractPadding = 10
+    const abstractWidth = width - abstractPadding * 2
 
     reserve(
-      measure(company, 12, true)
-      + measure(job.title, 11, true)
-      + measure(dates)
-      + measure(job.context)
-      + measure(firstMission)
+      measure(company, 12, true, headerWidth)
+      + headerHeight
+      + headerPadding * 2
+      + (job.abstract ? measure(job.abstract, 10, false, abstractWidth) + 25 : 0)
+      + measure(firstMission, 10, false, headerWidth)
       + 16,
     )
 
-    text(company, 12, true, 'H3')
-    text(job.title, 11, true)
-    text(dates, 10, false, 'P', { color: '#525252' })
-    doc.y += 3
-    text(job.context)
-    doc.y += 5
+    const headerBorderTop = doc.y
+    const headerBoxHeight = measure(company, 12, true, headerWidth)
+      + headerHeight + headerPadding * 2
+
+    doc.markContent('Artifact')
+    doc.save().fillColor('#F4F7F9')
+      .rect(40, headerBorderTop, width, headerBoxHeight).fill().restore()
+    doc.endMarkedContent()
+
+    doc.y += headerPadding
+    text(company, 12, true, 'H3', { x: 40 + headerPadding, width: headerWidth })
+    const headerTop = doc.y
+
+    text(job.title, 11, true, 'P', { x: 40 + headerPadding, width: titleWidth })
+    text(dates, 10, false, 'P', { x: 40 + headerPadding, color: '#525252', width: titleWidth })
+    const titleBottom = doc.y
+
+    doc.y = headerTop
+    text(job.context, 10, false, 'P', {
+      x: 40 + headerPadding + titleWidth + columnGap,
+      width: contextWidth,
+      color: '#525252',
+      align: 'right',
+    })
+    doc.y = Math.max(titleBottom, doc.y) + headerPadding
+    doc.x = 40
+
+    doc.markContent('Artifact')
+    doc.save().strokeColor('#B9CDD5').lineWidth(1)
+      .moveTo(40 + width, headerBorderTop).lineTo(40, headerBorderTop)
+      .lineTo(40, doc.y).lineTo(40 + width, doc.y)
+      .lineTo(40 + width, headerBorderTop).stroke().restore()
+    doc.endMarkedContent()
+
+    if (job.abstract) {
+      reserve(measure(job.abstract, 10, false, abstractWidth) + 25)
+      const abstractTop = doc.y
+
+      doc.y += abstractPadding
+      text(job.abstract, 10, false, 'P', { x: 40 + abstractPadding, width: abstractWidth })
+      const abstractBottom = doc.y + abstractPadding
+
+      doc.markContent('Artifact')
+      doc.save().strokeColor('#B9CDD5').lineWidth(1)
+        .moveTo(40, abstractTop).lineTo(40, abstractBottom)
+        .lineTo(40 + width, abstractBottom)
+        .lineTo(40 + width, abstractTop).stroke().restore()
+      doc.endMarkedContent()
+      doc.x = 40
+      doc.y = abstractBottom
+    }
+
+    const missionsStartPage = doc.bufferedPageRange().count - 1
+    const missionsTop = doc.y
+
+    doc.y += 10
 
     for (const mission of job.missions) {
-      text(`• ${plain(mission.description)}`)
+      text(`• ${mission.description}`, 10, false, 'P', {
+        x: 40 + headerPadding,
+        width: headerWidth,
+      })
       doc.y += 1
     }
 
     const technologies = [...new Set(job.missions.flatMap(mission => mission.environment))]
 
     if (technologies.length > 0) {
-      text(`Technologies: ${technologies.join(', ')}`, 9)
+      text(`Technologies: ${technologies.join(', ')}`, 9, false, 'P', {
+        x: 40 + headerPadding,
+        width: headerWidth,
+      })
     }
 
+    const missionsEndPage = doc.bufferedPageRange().count - 1
+    const missionsBottom = doc.y + 10
+
+    // Continue both side borders across pages and close the final mission section.
+    for (let page = missionsStartPage; page <= missionsEndPage; page += 1) {
+      doc.switchToPage(page)
+      const top = page === missionsStartPage ? missionsTop : 40
+      const bottom = page === missionsEndPage ? missionsBottom : doc.page.height - 40
+
+      doc.markContent('Artifact')
+      doc.save().strokeColor('#B9CDD5').lineWidth(1)
+        .moveTo(40, top).lineTo(40, bottom)
+        .moveTo(40 + width, top).lineTo(40 + width, bottom)
+
+      if (page === missionsEndPage) {
+        doc.moveTo(40, bottom).lineTo(40 + width, bottom)
+      }
+
+      doc.stroke().restore()
+      doc.endMarkedContent()
+    }
+
+    doc.x = 40
+    doc.y = missionsBottom
     doc.y += 6
   }
 

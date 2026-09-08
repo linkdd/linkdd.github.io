@@ -1,5 +1,5 @@
 - name: FlowG
-  description: OpenSource Log Processing software
+  description: Open-source log processing software used by 3 companies; SaaS offering in development.
   stack:
     - Go
     - Rust
@@ -11,7 +11,7 @@
     - Go
   website: https://krouter.cloud
 - name: Kubirds
-  description: Dockerized Supervision engine
+  description: Containerised monitoring engine.
   stack:
     - Kubernetes
     - Elixir
@@ -45,7 +45,7 @@
     - Rust
   website: https://github.com/linkdd/procfuion
 - name: Datapio
-  description: Continuous Integration and Deployment platform
+  description: Continuous integration and deployment platform.
   stack:
     - Kubernetes
     - Elixir
