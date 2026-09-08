@@ -32,12 +32,37 @@ const [profile, experienceData, skills, projects, freelancing, cvs] = await Prom
 const categories = leaves(skills)
 const experiences = experienceData.entries
 
+function experienceDate(value) {
+  return /on ?going/i.test(value) ? Infinity : Date.parse(value)
+}
+
 for (const cv of cvs) {
   requireValue(/^[a-z0-9-]+$/.test(cv.id), `Invalid CV id: ${cv.id}`)
+
+  // Omitted filters include all entries, including future additions to the data.
+  cv.experienceIds ??= experiences.map(entry => entry.id)
+  cv.skillCategoryIds ??= categories.map(entry => entry.id)
+  cv.projectNames ??= projects.map(entry => entry.name)
 
   for (const id of cv.experienceIds) {
     requireValue(experiences.some(entry => entry.id === id), `Unknown experience ${id}`)
   }
+
+  cv.experienceIds.sort((leftId, rightId) => {
+    if (cv.id !== 'general') {
+      const linkSocietyOrder = Number(leftId === 'link-society') - Number(rightId === 'link-society')
+
+      if (linkSocietyOrder !== 0) {
+        return linkSocietyOrder
+      }
+    }
+
+    const left = experiences.find(entry => entry.id === leftId)
+    const right = experiences.find(entry => entry.id === rightId)
+
+    return (experienceDate(right.endDate) - experienceDate(left.endDate))
+      || (experienceDate(right.startDate) - experienceDate(left.startDate))
+  })
 
   for (const id of cv.skillCategoryIds) {
     requireValue(categories.some(entry => entry.id === id), `Unknown skill category ${id}`)

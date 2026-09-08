@@ -1,3 +1,13 @@
+- id: general
+  title: Senior Engineer
+  summary: >-
+    I build web applications, backend services and cloud infrastructure, taking projects
+    from implementation through deployment and day-to-day operation. I connect
+    applications through APIs and messaging systems, develop data-processing tools,
+    and automate infrastructure and delivery workflows. My experience covers business
+    applications, synchronisation services and monitoring platforms. I also provide
+    technical training and documentation to help teams maintain their systems and
+    work independently.
 - id: devops
   title: DevOps Engineer
   summary: >-
