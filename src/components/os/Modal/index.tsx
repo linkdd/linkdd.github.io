@@ -8,7 +8,7 @@ import type { ModalProps } from './types'
 import { ModalDialog } from './styled'
 
 
-export default function Modal({ title, children, onClose }: ModalProps) {
+export default function Modal({ className, title, children, onClose }: ModalProps) {
   const dialog = useRef<HTMLDialogElement>(null)
 
   useEffect(() => {
@@ -29,6 +29,7 @@ export default function Modal({ title, children, onClose }: ModalProps) {
   return createPortal(
     <ModalDialog
       ref={dialog}
+      className={className}
       aria-label={title}
       onCancel={event => {
         event.preventDefault()
