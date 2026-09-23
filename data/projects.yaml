@@ -17,6 +17,12 @@
     - React
     - Astro
   website: https://h2ome.immo
+- name: SDF Studio
+  description: Create 2D SDF scenes, compile to GLSL shader
+  stack:
+    - Typescript
+    - React
+  website: https://linkdd.github.io/sdf-studio/
 - name: Kubirds
   description: Containerised monitoring engine.
   stack:
