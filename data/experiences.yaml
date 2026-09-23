@@ -370,6 +370,28 @@ entries:
           - Ansible
           - AWX
           - Netbox
+  - id: h2ome
+    category: null
+    startDate: August 2026
+    endDate: On going
+    company: H2ome
+    title: IT Consultant
+    context: Maintainer of the company website and IT infrastructure
+    abstract: Developped and deployed the company website and mailing system to
+      support the company's operations and communication needs.
+    missions:
+      - description: Website development and maintenance
+        environment:
+          - Typescript
+          - React
+          - Astro
+      - description: Infrastructure management (DNS, mailing, ...)
+        environment:
+          - Linux
+          - Docker
+          - DNS
+          - DigitalOcean
+          - OVH
   - id: link-society
     category: null
     startDate: July 2017

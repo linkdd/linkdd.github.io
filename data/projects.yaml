@@ -10,6 +10,13 @@
     - Kubernetes
     - Go
   website: https://krouter.cloud
+- name: H2ome
+  description: Company website
+  stack:
+    - Typescript
+    - React
+    - Astro
+  website: https://h2ome.immo
 - name: Kubirds
   description: Containerised monitoring engine.
   stack:
