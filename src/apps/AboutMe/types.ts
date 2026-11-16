@@ -3,8 +3,7 @@ export type Profile = {
   website: string
   github: string
   linkedin: string
-  medium: string
-  devto: string
+  blog: string
   linuxfr: string
   bio: string
 }

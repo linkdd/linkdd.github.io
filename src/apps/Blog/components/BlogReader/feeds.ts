@@ -6,7 +6,7 @@ import type { BlogFeed, BlogSource } from './types'
 export { blogFeeds } from '@/apps/Blog/data'
 
 
-async function fetchJson(url: URL, signal: AbortSignal): Promise<unknown> {
+async function fetchResponse(url: URL, signal: AbortSignal): Promise<Response> {
   const response = await fetch(url, {
     signal: AbortSignal.any([signal, AbortSignal.timeout(20000)]),
     cache: 'no-store',
@@ -16,7 +16,7 @@ async function fetchJson(url: URL, signal: AbortSignal): Promise<unknown> {
     throw new Error(`HTTP ${response.status}`)
   }
 
-  return response.json()
+  return response
 }
 
 
@@ -60,55 +60,36 @@ function parseArticle(
 }
 
 
-async function fetchDevArticles(feed: BlogFeed, signal: AbortSignal): Promise<BlogArticle[]> {
-  const articles = new Map<string, BlogArticle>()
-  let page = 1
+async function fetchRssArticles(feed: BlogFeed, signal: AbortSignal): Promise<BlogArticle[]> {
+  const response = await fetchResponse(new URL(feed.url), signal)
+  const document = new DOMParser().parseFromString(await response.text(), 'application/xml')
 
-  while (true) {
-    signal.throwIfAborted()
-
-    const url = new URL(feed.url)
-
-    url.searchParams.set('page', String(page))
-
-    const items = await fetchJson(url, signal)
-
-    if (!Array.isArray(items)) {
-      throw new Error('Invalid DEV response')
-    }
-
-    if (items.length === 0) {
-      return [...articles.values()]
-    }
-
-    const previousCount = articles.size
-
-    for (const item of items) {
-      const entry = asRecord(item)
-      const article = parseArticle('devto', entry.title, entry.url, entry.published_at)
-
-      articles.set(article.url, article)
-    }
-
-    if (articles.size === previousCount) {
-      throw new Error('DEV pagination returned a repeated page')
-    }
-
-    page += 1
+  if (document.querySelector('parsererror') || !document.querySelector('rss > channel')) {
+    throw new Error('Invalid RSS feed')
   }
+
+  return [...document.querySelectorAll('rss > channel > item')].map(item => (
+    parseArticle(
+      feed.source,
+      item.querySelector('title')?.textContent,
+      item.querySelector('link')?.textContent,
+      item.querySelector('pubDate')?.textContent,
+    )
+  ))
 }
 
 
 export async function fetchFeed(feed: BlogFeed, signal: AbortSignal): Promise<BlogArticle[]> {
-  if (feed.source === 'devto') {
-    return fetchDevArticles(feed, signal)
+  if (feed.source === 'blog') {
+    return fetchRssArticles(feed, signal)
   }
 
   const url = new URL('https://api.rss2json.com/v1/api.json')
 
   url.searchParams.set('rss_url', feed.url)
 
-  const result = asRecord(await fetchJson(url, signal))
+  const response = await fetchResponse(url, signal)
+  const result = asRecord(await response.json())
 
   if (result.status !== 'ok' || !Array.isArray(result.items)) {
     throw new Error('RSS2JSON could not load the feed')

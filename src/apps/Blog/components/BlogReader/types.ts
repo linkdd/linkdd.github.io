@@ -1,4 +1,4 @@
-export type BlogSource = 'linuxfr' | 'medium' | 'devto'
+export type BlogSource = 'linuxfr' | 'blog'
 
 export type BlogFeed = {
   source: BlogSource

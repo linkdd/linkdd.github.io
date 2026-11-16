@@ -1,8 +1,7 @@
 import TableView from '@/components/base/TableView'
 
 import LinuxFrLogo from '@/assets/logos/linuxfr.png'
-import MediumLogo from '@/assets/logos/medium.svg'
-import DevToLogo from '@/assets/logos/devto.svg'
+import BlogIcon from '@/assets/icons/explorer.png'
 
 import { blogFeeds } from '@/apps/Blog/data'
 
@@ -21,8 +20,7 @@ const dateFormat = new Intl.DateTimeFormat('en-GB', {
 
 const sourceLogos: Record<string, string> = {
   linuxfr: LinuxFrLogo,
-  medium: MediumLogo,
-  devto: DevToLogo,
+  blog: BlogIcon,
 }
 
 

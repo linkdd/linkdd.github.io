@@ -14,8 +14,7 @@ import SpaceCadetPinball from '@/apps/SpaceCadetPinball'
 
 import GithubLogo from '@/assets/logos/github.ico'
 import LinkedinLogo from '@/assets/logos/linkedin.ico'
-import MediumLogo from '@/assets/logos/medium.svg'
-import DevtoLogo from '@/assets/logos/devto.svg'
+import BlogIcon from '@/assets/icons/explorer.png'
 import LinuxfrLogo from '@/assets/logos/linuxfr.png'
 
 
@@ -39,8 +38,7 @@ export default function App() {
       links={[
         { title: 'GitHub', url: profile.github, icon: GithubLogo },
         { title: 'LinkedIn', url: profile.linkedin, icon: LinkedinLogo },
-        { title: 'Medium', url: profile.medium, icon: MediumLogo },
-        { title: 'DevTo', url: profile.devto, icon: DevtoLogo },
+        { title: 'Blog', url: profile.blog, icon: BlogIcon },
         { title: 'LinuxFR', url: profile.linuxfr, icon: LinuxfrLogo },
       ]}
       initialOpen={['about-me']}
